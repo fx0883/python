@@ -15,6 +15,7 @@ class BookItem(Item):
     type = Field()
     description = Field()
     url = Field()
+    imageurl = Field()
 
 class ChapterItem(Item):
     id = Field()

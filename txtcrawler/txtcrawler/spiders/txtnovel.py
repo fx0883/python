@@ -29,7 +29,9 @@ class TxtnovelSpider(scrapy.Spider):
             bookItem = BookItem()
             bookItem["id"] = str(uuid.uuid1())
             typeTag = t1.find("span",{"class":"classname"})
-            bookItem['type'] = typeTag.text
+
+
+            bookItem['type'] = getOneStrUseRe("\[([^\]]*)",typeTag.text)
 
             titleTag = t1.find("a")
             bookItem['title'] = titleTag.text
@@ -46,16 +48,24 @@ class TxtnovelSpider(scrapy.Spider):
                     bookItem['author'] = trim(bookItem['author'])
                 else:
                     bookItem['description'] = t2Item.text
-            yield Request(url=bookItem['url'], meta={"bookId": bookItem["id"]}, callback=self.parsebookdetail)
+            yield Request(url=bookItem['url'], meta={"bookitem": bookItem}, callback=self.parsebookdetail)
 
     def parsebookdetail(self,response):
-        bookId = response.meta["bookId"]
+        bookItem = response.meta["bookitem"]
+        bookId = bookItem["id"]
+
+
+
         body = response.body.decode('utf-8')
         soup = BeautifulSoup(body, 'html.parser')
         readnode = soup.find(text="点击在线全文阅读^_^")
         # text11 = readnode.parent.text
         chapterlisturl = readnode.parent.parent["href"]
 
+        imageNode = soup.find("span",{"class":"img"})
+        bookItem["imageurl"] = imageNode.find("img")["src"]
+
+        yield bookItem
         yield Request(url=chapterlisturl, meta={"bookId": bookId}, callback=self.parsebookchatperlist)
 
     def parsebookchatperlist(self, response):
@@ -84,7 +94,11 @@ class TxtnovelSpider(scrapy.Spider):
         contentText = contentnode.text
         # contentText = contentText.replace("<br>", "")
         chapteritem["content"] = dealcontent(contentText)
-        print(chapteritem["content"])
+        # print(chapteritem["content"])
+        print("==============>")
+        print(chapteritem["orderid"])
+        yield chapteritem
+
 
 def dealcontent(strSource):
     strSource = strSource.replace("<br>", "")
