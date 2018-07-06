@@ -48,7 +48,16 @@ class TxtnovelSpider(scrapy.Spider):
                     bookItem['author'] = trim(bookItem['author'])
                 else:
                     bookItem['description'] = t2Item.text
+
+            # bookItem["imageurl"] = "123123"
+            #
+            # yield bookItem
             yield Request(url=bookItem['url'], meta={"bookitem": bookItem}, callback=self.parsebookdetail)
+
+        # 查询是否有下一页
+        nextpagenode = soup.find("a", {"class": "next"})
+        if nextpagenode != None:
+            yield Request(url=nextpagenode['href'], meta={}, callback=self.parse)
 
     def parsebookdetail(self,response):
         bookItem = response.meta["bookitem"]
@@ -97,6 +106,7 @@ class TxtnovelSpider(scrapy.Spider):
         # print(chapteritem["content"])
         print("==============>")
         print(chapteritem["orderid"])
+        print(chapteritem["title"])
         yield chapteritem
 
 
