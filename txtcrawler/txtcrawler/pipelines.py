@@ -15,6 +15,7 @@ import uuid
 import pymysql
 import spiders.pconfig
 from items import BookItem,ChapterItem
+from redisopera import RedisOpera
 
 
 
@@ -24,12 +25,11 @@ class TxtcrawlerPipeline(object):
     def __init__(self):
         print("TxtcrawlerPipeline==>init")
         self.initDB()
+        #初始化redis
+        self.Redis = RedisOpera('insert')
 
 
     def initDB(self):
-
-
-
         try:
             self.conn = pymysql.connect(user=spiders.pconfig.mysqldb["user"],
                                         passwd=spiders.pconfig.mysqldb["password"],
@@ -46,12 +46,14 @@ class TxtcrawlerPipeline(object):
         if isinstance(item, BookItem):
             try:
                 self.insertbookitem(item)
+                self.Redis.write(item['url'])
             except Exception as err:
                 print(err)
                 pass
         elif isinstance(item, ChapterItem):
             try:
                 self.insertchapteritem(item)
+                self.Redis.write(item['url'])
             except Exception as err:
                 print(err)
                 pass

@@ -6,12 +6,19 @@
 # http://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-
+from scrapy.exceptions import IgnoreRequest
+from redisopera import RedisOpera
+import random
+# from cookies import cookies
+from user_agents import agents
 
 class TxtcrawlerSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
+
+    def __init__(self):
+        self.Redis = RedisOpera('query')
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -54,3 +61,12 @@ class TxtcrawlerSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+    def process_request(self, request, spider):
+        agent = random.choice(agents)
+        request.headers["User-Agent"] = agent
+        if self.Redis.query(request.url):
+            raise IgnoreRequest("IgnoreRequest : %s" % request.url)
+        else:
+            return None
