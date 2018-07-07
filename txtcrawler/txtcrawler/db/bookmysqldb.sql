@@ -30,8 +30,9 @@ CREATE TABLE `bookitem` (
   `url` varchar(512) DEFAULT NULL,
   `imageurl` varchar(512) DEFAULT NULL,
   `description` varchar(512) DEFAULT NULL,
+  `readtimes` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -49,7 +50,7 @@ CREATE TABLE `chapteritem` (
   `url` varchar(512) DEFAULT NULL,
   `content` longtext,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

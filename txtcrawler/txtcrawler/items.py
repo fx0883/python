@@ -16,6 +16,7 @@ class BookItem(Item):
     description = Field()
     url = Field()
     imageurl = Field()
+    readtimes = Field()
 
 class ChapterItem(Item):
     id = Field()

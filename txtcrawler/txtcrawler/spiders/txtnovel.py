@@ -45,6 +45,9 @@ class TxtnovelSpider(scrapy.Spider):
                     # bookItem.author = t2Item.contents[0]
                     curTagText = t2Item.text
                     bookItem['author'] = getOneStrUseRe("小说作者：(.*?)文件大小",curTagText)
+
+                    readtimesStr = getOneStrUseRe("下载次数：(.*?)次",curTagText)
+                    bookItem['readtimes'] = convert2int(readtimesStr)
                     bookItem['author'] = trim(bookItem['author'])
                 else:
                     bookItem['description'] = t2Item.text
@@ -136,3 +139,20 @@ def trim(s):
         return trim(s[:-1])
     else:
         return s
+
+def convert2int(strValue):
+    retlist = re.findall("(^[0-9]*)", strValue)
+    retStr = strValue
+    if len(retlist)>0:
+        retStr = retlist[0]
+
+    ret = 0
+    try:
+        ret = int(retStr)
+    except Exception as err:
+        print(err)
+        pass
+    matchw = re.match(r".*?w.*?",strValue,re.I)
+    if matchw!=None:
+        ret = ret*10000
+    return ret

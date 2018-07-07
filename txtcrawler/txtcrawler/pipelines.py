@@ -72,11 +72,12 @@ class TxtcrawlerPipeline(object):
         description = item["description"]
         url = item["url"]
         imageurl = item["imageurl"]
+        readtimes = item["readtimes"]
         cur = self.conn.cursor()
 
         sql = """insert into bookmysqldb.bookitem
-(id,title,author,description,booktype,url,imageurl) values
-        ('%s','%s','%s','%s','%s','%s','%s')""" % (id,title, author,description,booktype,url,imageurl)
+(id,title,author,description,booktype,url,imageurl,readtimes) values
+        ('%s','%s','%s','%s','%s','%s','%s','%d')""" % (id,title, author,description,booktype,url,imageurl,readtimes)
 
         cur.execute(sql.encode('utf-8'))
 
