@@ -18,8 +18,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",views.getNovelList,name='getNovelList'),
-    path("keyword/<str:keyword>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",views.searchNovelList,name='searchNovelList'),
+    path("novelList/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",views.getNovelList,name='getNovelList'),
+    path("searchNovelList/keyword/<str:keyword>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",views.searchNovelList,name='searchNovelList'),
     path("bookid/<str:bookid>/chapterid/<str:chapterid>", views.getChapterById,name='getChapterById'),
     path("bookid/<str:bookid>/chapterStartNumber/<int:chapterStartNumber>/chapterEndNumber/<int:chapterEndNumber>", views.getChapterList, name='getChapterList'),
     path("categoryName/<str:categoryName>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>", views.getCategoryNovelList, name='getCategoryNovelList'),

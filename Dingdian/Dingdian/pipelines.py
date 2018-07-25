@@ -40,8 +40,9 @@ class DingdianxiaoshuoPipeline(object):
 
             # novel=db[novel_name]
 
-            novel_id = novel_name+"_"+novel_author
+            # novel_id = novel_name+"_"+novel_author
 
+            novel_id = str(uuid.uuid1())
             novel = db[novel_id]
 
 
@@ -86,7 +87,7 @@ class DingdianxiaoshuoPipeline(object):
                     chapterList.append({section_name: section_id})
                     print("======> "+section_name)
 
-                    if index > 20:
+                    if index > 3:
                         break
 
             imgurl = item['novel_imgurl']

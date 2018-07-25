@@ -2,7 +2,7 @@ from django.test import TestCase
 
 # Create your tests here.
 from pymongo import MongoClient
-
+import hashlib
 
 # client = MongoClient("mongodb://127.0.0.1:27017")
 # # 连接数据库
@@ -80,26 +80,36 @@ from pymongo import MongoClient
 
 
 
-def getCategoryBookList(categoryName,pageIndex,pageSize):
-    client = MongoClient("mongodb://127.0.0.1:27017")
+# def getCategoryBookList(categoryName,pageIndex,pageSize):
+#     client = MongoClient("mongodb://127.0.0.1:27017")
+#     # 连接数据库
+#     db = client.dingdian
+#     # 获取booklist集合
+#     novel_list = db["book_list"]
+#
+#
+#     searchdic = {"novel_family":categoryName}
+#
+#     # pageIndex = 0
+#     index = int(pageIndex) * pageSize
+#     searchRes = novel_list.find(searchdic).skip(index).limit(pageSize)
+#
+#     # pageIndex = 0
+#     rets = []
+#     for item in searchRes:
+#         rets.append(item)
+#         print(item)
+#     client.close()
+#     # return JsonResponse({"result": 0, "novellist": rets})
+#
+# getCategoryBookList("网游竞技",1,20)
+
+# md5=hashlib.md5('网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技'.encode('utf-8')).hexdigest()
+# print(md5)
+
+client = MongoClient("mongodb://127.0.0.1:27017")
     # 连接数据库
-    db = client.dingdian
-    # 获取booklist集合
-    novel_list = db["book_list"]
+db = client.dingdian
 
-
-    searchdic = {"novel_family":categoryName}
-
-    # pageIndex = 0
-    index = int(pageIndex) * pageSize
-    searchRes = novel_list.find(searchdic).skip(index).limit(pageSize)
-
-    # pageIndex = 0
-    rets = []
-    for item in searchRes:
-        rets.append(item)
-        print(item)
-    client.close()
-    # return JsonResponse({"result": 0, "novellist": rets})
-
-getCategoryBookList("网游竞技",1,20)
+tttt= db["123123"]
+tttt.find({})
