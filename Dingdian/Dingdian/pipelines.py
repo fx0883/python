@@ -87,8 +87,8 @@ class DingdianxiaoshuoPipeline(object):
                     chapterList.append({section_name: section_id})
                     print("======> "+section_name)
 
-                    if index > 3:
-                        break
+                    # if index > 3:
+                    #     break
 
             imgurl = item['novel_imgurl']
 
