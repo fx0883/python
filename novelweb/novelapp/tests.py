@@ -3,6 +3,7 @@ from django.test import TestCase
 # Create your tests here.
 from pymongo import MongoClient
 import hashlib
+import json
 
 # client = MongoClient("mongodb://127.0.0.1:27017")
 # # 连接数据库
@@ -100,16 +101,72 @@ import hashlib
 #         rets.append(item)
 #         print(item)
 #     client.close()
-#     # return JsonResponse({"result": 0, "novellist": rets})
 #
+#     retdict = {"categoryName":"网游竞技","nobelList":rets}
+#
+#     j = json.dumps(retdict)
+#     print(j)
+#     # return JsonResponse({"result": 0, "novellist": rets})
+#     decode_json = json.loads(j)
+#     print(decode_json)
 # getCategoryBookList("网游竞技",1,20)
 
 # md5=hashlib.md5('网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技网游竞技'.encode('utf-8')).hexdigest()
 # print(md5)
 
-client = MongoClient("mongodb://127.0.0.1:27017")
-    # 连接数据库
-db = client.dingdian
+# client = MongoClient("mongodb://127.0.0.1:27017")
+#     # 连接数据库
+# db = client.dingdian
+#
+# tttt= db["123123"]
+# tttt.find({})
 
-tttt= db["123123"]
-tttt.find({})
+
+
+# def getCategoryBookList(categoryName,pageIndex,pageSize):
+#     client = MongoClient("mongodb://127.0.0.1:27017")
+#     # 连接数据库
+#     db = client.dingdian
+#
+#     # 获取booklist集合
+#     novel_list = db["book_list"]
+#     categoryList = db["novel_category"]
+#
+#     retCategory = categoryList.find()
+#     retAllNovelCategory = []
+#     for itemCategory in retCategory:
+#         categoryName = itemCategory['category']
+#         searchdic = {"novel_family": categoryName}
+#         # pageIndex = 0
+#         index = int(pageIndex) * pageSize
+#         searchRes = novel_list.find(searchdic).skip(index).limit(pageSize)
+#         # pageIndex = 0
+#         rets = []
+#         for item in searchRes:
+#             rets.append(item)
+#             print(item)
+#         print(retCategory)
+#
+#         retAllNovelCategory.append({"categoryName":categoryName,"nobelList":rets})
+#
+#     client.close()
+#
+#     print(retAllNovelCategory)
+# getCategoryBookList("网游竞技",0,10)
+
+def getChapterById(bookid):
+    client = MongoClient("mongodb://127.0.0.1:27017")
+    # 连接数据库
+    db = client.dingdian
+
+    # bookid = request.GET.get('bookid', "")
+    # chapterid = request.GET.get('chapterid', "")
+
+    # 获取booklist集合
+    novel_list = db["book_list"]
+
+    searchRes = novel_list.find_one({"_id":bookid})
+    client.close()
+    print(searchRes)
+
+getChapterById("00b791de-9638-11e8-b4c4-68f728a3bccf")

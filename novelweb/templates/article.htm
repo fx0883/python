@@ -1,0 +1,78 @@
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>红袖添香触屏版自适应手机</title>
+    <meta name="MobileOptimized" content="236">
+    <meta http-equiv="Cache-Control" content="max-age=900">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="红袖添香小说网手机版提供最新免费言情小说手机阅读及下载。包括言情小说，玄幻小说，穿越小说，都市小说，言情小说书库等。">
+    <title>书籍详情</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/defaultip20141118.css' %}" media="screen">
+
+    <script src="
+    {% static 'js/jquery-1.2.1.pack.js' %}"></script>
+    <script src="{% static 'js/ipindex140827.js' %}"></script>
+</head>
+
+<body style="position: static;">
+<div class="top">
+    <ul>
+        <li><a id="goBuck" href="javascript:history.go(-1)"></a></li>
+        <li class="shuji">书籍详情</li>
+        <li><a id="goCenter"></a></li>
+        <li><a id="goHome" href="/wap/index"></a></li>
+    </ul>
+</div>
+<div id="jsuser"></div>
+<div id="htmlbookinfo" class="fn-clear">
+    <img class="book_cover" src="{{ novel_imgurl }}">
+    <h1>{{ novel_name }}</h1>
+    <ul class="intro">
+        <li>作者：{{ novel_author }}</li>
+        <li>类别：{{ novel_family }}</li>
+        <li>状态：{{ novel_status }}</li>
+    </ul>
+</div>
+
+<ul class="goread">
+    <li><a href="javascript:void(0)http://sns.wap.hongxiu.com/iphone/clientdown.aspx"
+           class="green"><span>离线阅读</span></a></li>
+    <li><a href="javascript:void(0)/1311015/12597159.html" id="htmldianjiyuedu" class="begin">开始阅读</a></li>
+    <li class="green"><a id="jsFav">加入书架</a></li>
+</ul>
+
+<div class="lastread" id="jsLastread">
+    <dl></dl>
+    <div class="title">上次读到：<a id="jsLastLink" src=""></a></div>
+</div>
+
+<div class="detail_p">
+    <div id="htmljieshao">{{ novel_description }}</div>
+
+</div>
+
+<ol id="alllist">
+    <li class="g_btn"><a href="#">章节目录</a></li>
+    {% for chapterItem in chapterlist %}
+
+            <li><a href="{{ chapterItem }}">{{ chapterItem }}</a></li>
+
+
+    {% endfor %}
+
+
+</ol>
+
+<div class="footer">
+    <div class="version"><a href="javascript:void(0)http://w.hongxiu.com/1311015/index.html">简约版</a><a
+            href="javascript:void(0)http://pad.hongxiu.com/1311015/index.html">PAD版</a><a
+            href="javascript:void(0)http://hongxiu.cn/clientdown/">客户端下载</a></div>
+</div>
+
+<footer><span>hongxiu.cn&nbsp;?2014</span><a href="javascript:void(0)/DirIP/?i=12">快速导航</a> <a
+        href="javascript:void(0)http://m.53kf.com/62806269/54/1" target="_blank">在线客服</a></footer>
+
+</body>
+</html>

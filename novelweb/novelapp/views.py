@@ -13,6 +13,28 @@ from django.core.handlers.wsgi import WSGIRequest
 # def test_api(request):
 #     return JsonResponse({"result": 0, "msg": "执行成功"})
 
+@csrf_exempt
+def getIndexCategoryNovelList(request):
+    pageIndex = 0
+    pageSize = 10
+    client = MongoClient("mongodb://127.0.0.1:27017")
+    # 连接数据库
+    db = client.dingdian
+    # 获取booklist集合
+    novel_list = db["book_list"]
+    # pageIndex = request.GET.get('pageindex', 0)
+    # pageIndex = 0
+    index = int(pageIndex) * pageSize
+    searchRes = novel_list.find().skip(index).limit(pageSize)
+
+    rets = []
+    for item in searchRes:
+        rets.append(item)
+        print(item)
+    client.close()
+    return JsonResponse({"result": 0, "booklist": rets})
+
+
 
 @csrf_exempt
 def getNovelList(request,pageIndex,pageSize):
