@@ -19,15 +19,19 @@ from . import views
 from . import wapview
 
 urlpatterns = [
-    path("novelList/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",views.getNovelList,name='getNovelList'),
-    path("searchNovelList/keyword/<str:keyword>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",views.searchNovelList,name='searchNovelList'),
-    path("bookid/<str:bookid>/chapterid/<str:chapterid>", views.getChapterById,name='getChapterById'),
-    path("bookid/<str:bookid>/chapterStartNumber/<int:chapterStartNumber>/chapterEndNumber/<int:chapterEndNumber>", views.getChapterList, name='getChapterList'),
-    path("categoryName/<str:categoryName>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>", views.getCategoryNovelList, name='getCategoryNovelList'),
+    path("novelList/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>", views.getNovelList, name='getNovelList'),
+    path("searchNovelList/keyword/<str:keyword>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
+         views.searchNovelList, name='searchNovelList'),
+    path("bookid/<str:bookid>/chapterid/<str:chapterid>", views.getChapterById, name='getChapterById'),
+    path("bookid/<str:bookid>/chapterStartNumber/<int:chapterStartNumber>/chapterEndNumber/<int:chapterEndNumber>",
+         views.getChapterList, name='getChapterList'),
+    path("categoryName/<str:categoryName>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
+         views.getCategoryNovelList, name='getCategoryNovelList'),
 
-
-    path("wap",wapview.index,name='index'),
-    path("wap/getNovelInfo/bookid/<str:bookid>",wapview.getNovelInfo,name='getNovelInfo'),
-
+    path("wap", wapview.index, name='index'),
+    path("wap/getNovelInfo/bookid/<str:bookid>", wapview.getNovelInfo, name='getNovelInfo'),
+    path("wap/getChapterInfo/bookid/<str:bookid>/chapterid/<str:chapterid>", wapview.getChapterInfo,
+         name='getChapterInfo'),
+    path("wap/search", wapview.search, name='search'),
 
 ]

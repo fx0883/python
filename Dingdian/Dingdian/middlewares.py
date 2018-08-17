@@ -8,7 +8,7 @@
 from scrapy import signals
 import random
 # from cookies import cookies
-from user_agents import agents
+from Dingdian.user_agents import agents
 
 class DingdianSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,

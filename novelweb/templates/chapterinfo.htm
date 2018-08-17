@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<!-- saved from url=(0108)file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+    <meta content="236" name="MobileOptimized">
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=http://wap.hongxiu.com/3g/592941/6399708.html">
+    </noscript>
+    <title>{{ section_name }}</title>
+
+    <script type="text/javascript">
+        var curSection_id = "{{ id }}";
+    </script>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/zhengwen.css' %}" media="screen">
+    <script src=" {% static 'js/jquery-1.2.1.pack.js' %}"></script>
+    <script src="{% static 'js/ipindex140827.js' %}"></script>
+
+
+</head>
+<body>
+<div id="scr">
+    <a href="../../../../getNovelInfo/bookid/{{ bookId }}">{{ novel_name }}</a>
+    <dl class="lrpage">
+        <dt></dt>
+
+        <dd>
+
+            <a href="javascript:getPrePage(curSection_id)"
+               id="htmlxiazhangT">上一页</a></dd>
+        <dd>
+
+            <a href="javascript:getNextPage(curSection_id)"
+               id="htmlxiazhangT">下一页</a></dd>
+    </dl>
+    <div class="rbtn">
+
+
+        <div class="rbtnr"><a href="javascript:;" onclick="fsi(2)">放大(+)</a><span id="jszihao">18px</span><a
+                href="javascript:;" onclick="fsi(-2)">缩小(-)</a></div>
+    </div>
+    <div class="read_content" id="htmlContent">
+        <p><strong>{{ section_name }}</strong></p>
+
+
+        {{ content | linebreaksbr }}
+
+    </div>
+
+
+    <table cellspacing="6">
+        <tbody>
+        <tr>
+            <td width="36%"><a href="../../../../getNovelInfo/bookid/{{ bookId }}" id="htmlshangzhang" class="btmback">返回目录</a>
+            </td>
+            <td width="59%"><a
+                    href="javascript:getNextPage(curSection_id)"
+                    id="htmlxiazhang" class="btmnext">下一页</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="text-align:center"></div>
+
+
+    <div class="flr">
+    <!--       <a href="file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm#">返回目录</a>
+        |
+        <a href="file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm#">简约版</a>
+        |
+        <a href="file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm#">加入书签</a>
+        -->
+    </div>
+    <div style="font-size:12px;text-align:center">
+    <!--    <a
+            href="file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm#"
+            target="_blank">推荐使用百度浏览器</a>&nbsp;|&nbsp;<a
+            href="file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm#"
+            target="_blank">简单好用的Android手机助手</a>&nbsp;|&nbsp;<a
+            href="file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm#"
+            target="_blank">联想网址导航</a>&nbsp;|&nbsp;<a
+            href="file:///Users/fengxuan/Downloads/%E2%88%ABI%CC%88%E2%80%93%E2%80%B0%E2%80%93%C2%B0A%CC%80%C2%B5/zhengwen.htm#"
+            target="_blank">劲爆安卓中文游戏</a>
+            -->
+    </div>
+    <div class="btm"><span></span>
+    </div>
+
+</div>
+</body>
+</html>

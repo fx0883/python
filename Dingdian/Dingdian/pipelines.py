@@ -14,6 +14,11 @@ from bs4 import BeautifulSoup
 import re
 import uuid
 import spiders.downloader
+import hashlib
+import time
+import datetime
+import operator as op
+
 #在pipeline中我们将实现下载每个小说，存入MongoDB数据库
 
 class DingdianxiaoshuoPipeline(object):
@@ -35,28 +40,55 @@ class DingdianxiaoshuoPipeline(object):
             #根据小说名字，使用集合，没有则创建
 
             novel_author = item['novel_author']
-            if novel_author == "":
-                novel_author = str(uuid.uuid1())
-
+            # if novel_author == "":
+            #     novel_author = str(uuid.uuid1())
+            imgurl = item['novel_imgurl']
+            chapterList = []
+            cur_md5 = self.getMd5NovelNameAndAuthor(novel_name,novel_author)
             # novel=db[novel_name]
+            cur_novel =  novel_list.find_one({"novel_md5": cur_md5})
 
+            cur_novel_id = ""
+            chapterlistId = ""
+            if cur_novel!=None:
+                chapterList = cur_novel["chapterlist"]
+                cur_novel_id = cur_novel["_id"]
+                chapterlistId = cur_novel["chapterlistId"]
+            else:
+                cur_novel_id = str(uuid.uuid1())
+                chapterlistId = str(uuid.uuid1())
+
+                novel_list.insert(
+                    {"_id": cur_novel_id, "novel_name": item['novel_name'], "novel_family": item['novel_family'],
+                     "novel_author": item['novel_author'], "novel_status": item['novel_status'],
+                     "novel_imgurl": imgurl, "novel_description": item['novel_description'],
+                     "chapterlist": chapterList, "chapterlistId": chapterlistId,"novel_md5":cur_md5})
+
+                ret_novel_idStr = str(cur_novel_id)
+                spiders.downloader.download_image(imgurl, "./bookimg", ret_novel_idStr)
+
+            novel = db[chapterlistId]
             # novel_id = novel_name+"_"+novel_author
 
-            novel_id = str(uuid.uuid1())
-            novel = db[novel_id]
+
 
 
             #获取小说类型
             novel_family = item['novel_family']
-            novel_familydb = db[novel_family]
-
+            # novel_familydb = db[novel_family]
+            novel_category_collection = db.novel_category
+            if  not novel_category_collection.find_one({"category":novel_family}):
+                novel_category_collection.insert({"_id":str(uuid.uuid1()),"category": novel_family})
             #使用记录已抓取网页的集合，没有则创建
             section_url_downloaded_collection=db.section_url_collection
+            # index=1
 
-            index=1
+            if section_url_downloaded_collection.find_one({"url":item["novel_url"]}) != None:
+                print(item["novel_name"]+"========>已经下载过了......")
+                return item
+            index2=1
             print("正在下载："+item["novel_name"])
 
-            chapterList = []
             #根据小说每个章节的地址，下载小说各个章节
             for section_url in item['novel_section_urls']:
 
@@ -73,7 +105,8 @@ class DingdianxiaoshuoPipeline(object):
                     soup_texts = BeautifulSoup(download_html, 'lxml')
                     content=soup_texts.find("dd",attrs={"id":"contents"}).getText()
 
-
+                    index2 = index2+1
+                    index = self.getinttime()
                     section_id = str(uuid.uuid1())
                     #向Mongodb数据库插入下载完的小说章节内容
                     novel.insert({"_id":section_id,"novel_name": item['novel_name'], "novel_family": item['novel_family'],
@@ -81,34 +114,46 @@ class DingdianxiaoshuoPipeline(object):
                                   "section_name": section_name,"order_number":index,
                                   "content": content})
                     print(index)
-                    index+=1
+
                     #下载完成，则将章节地址存入section_url_downloaded_collection集合
                     section_url_downloaded_collection.insert({"url":section_url})
-                    chapterList.append({section_name: section_id})
+                    chapterList.append({ "section_id": section_id, "section_name": section_name})
                     print("======> "+section_name)
-
-                    # if index > 3:
+                    novel_list.update({"_id": cur_novel_id}, {"$set": {"chapterlist": chapterList}})
+                    # if index2 > 50:
                     #     break
 
-            imgurl = item['novel_imgurl']
+            print("当前状态=========》"+item["novel_status"])
+            # if op.eq(str(item["novel_status"]), str('完本')):
+            if str('完本') in str(item["novel_status"]):
+                print("当前状态=========》" + item["novel_status"])
+                section_url_downloaded_collection.insert({"url": item["novel_url"]})
+            else:
+                print("当前状态不是完本=========》" + item["novel_status"])
+            # cur_novel_id = ""
+            # if cur_novel == None:
+            #     cur_novel_id = str(uuid.uuid1())
+            #     novel_list.insert(
+            #         {"_id": cur_novel_id, "novel_name": item['novel_name'], "novel_family": item['novel_family'],
+            #          "novel_author": item['novel_author'], "novel_status": item['novel_status'],
+            #          "novel_imgurl": imgurl, "novel_description": item['novel_description'],
+            #          "chapterlist": chapterList, "chapterlistId": novel_id,"md5":cur_md5})
+            #
+            #     ret_novel_idStr = str(cur_novel_id)
+            #     spiders.downloader.download_image(imgurl, "./bookimg", ret_novel_idStr)
+            # else:
+            #     cur_novel_id = cur_novel._id
 
-            ret_novel_id = str(uuid.uuid1())
-            novel_list.insert({"_id":ret_novel_id,"novel_name": item['novel_name'], "novel_family": item['novel_family'],
-                          "novel_author": item['novel_author'], "novel_status": item['novel_status'],
-                               "novel_imgurl": imgurl,"novel_description": item['novel_description'],
-                          "chapterlist": chapterList,"chapterlistId":novel_id})
-
-            ret_novel_idStr = str(ret_novel_id)
-            spiders.downloader.download_image(imgurl, "./bookimg", ret_novel_idStr)
-
-            # novel_familydb.insert({"_id": novel_id, "novel_name": item['novel_name'], "novel_family": item['novel_family'],
-            #               "novel_author": item['novel_author'], "novel_status": item['novel_status'],
-            #                    "novel_imgurl": item['novel_imgurl'],"novel_description": item['novel_description'],
-            #               "chapterlist": chapterList})
-
-            # novel_familydb.insert({"_id":str(uuid.uuid1()),"novel_id":ret_novel_id,"novel_name": item['novel_name'], "novel_family": item['novel_family'],
-            #               "novel_author": item['novel_author'], "novel_status": item['novel_status'],
-            #                    "novel_imgurl": imgurl,"novel_description": item['novel_description']})
 
             print("下载完成："+item['novel_name'])
         return item
+
+
+    def getinttime(self):
+        t = time.time()
+        return int(round(t * 1000))
+
+    def getMd5NovelNameAndAuthor(self,novelName,author):
+        retStr = str(novelName+author)
+        md5 = hashlib.md5(retStr.encode("utf-8")).hexdigest()
+        return str(md5)

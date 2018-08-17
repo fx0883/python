@@ -154,19 +154,39 @@ import json
 #     print(retAllNovelCategory)
 # getCategoryBookList("网游竞技",0,10)
 
-def getChapterById(bookid):
+# def getChapterById(bookid):
+#     client = MongoClient("mongodb://127.0.0.1:27017")
+#     # 连接数据库
+#     db = client.dingdian
+#
+#     # bookid = request.GET.get('bookid', "")
+#     # chapterid = request.GET.get('chapterid', "")
+#
+#     # 获取booklist集合
+#     novel_list = db["book_list"]
+#
+#     searchRes = novel_list.find_one({"_id":bookid})
+#     client.close()
+#     print(searchRes)
+#
+# getChapterById("00b791de-9638-11e8-b4c4-68f728a3bccf")
+
+
+def getChapterInfo(bookid,chapterid):
     client = MongoClient("mongodb://127.0.0.1:27017")
     # 连接数据库
     db = client.dingdian
 
-    # bookid = request.GET.get('bookid', "")
-    # chapterid = request.GET.get('chapterid', "")
+    # booklist = db["book_list"];
+    #
+    chapterlist = db[bookid]
 
-    # 获取booklist集合
-    novel_list = db["book_list"]
+    retRes = chapterlist.find_one({"_id": chapterid})
 
-    searchRes = novel_list.find_one({"_id":bookid})
+    retRes["content"] = retRes["content"].replace("\r\n", "<br/>").replace("\0x", "&nbsp");
+
+    print(retRes)
+
     client.close()
-    print(searchRes)
 
-getChapterById("00b791de-9638-11e8-b4c4-68f728a3bccf")
+getChapterInfo("6572e96e-9c71-11e8-9b63-6003088a50b6","668cc248-9c71-11e8-b1bf-6003088a50b6")

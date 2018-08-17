@@ -6,9 +6,13 @@ from items import DingdianxiaoshuoItem
 class dingdian(scrapy.Spider):
     name="dingdian"
     allowed_domains=["23us.so"]
-    start_urls = ['http://www.23us.so/top/allvisit_1.html']
-    server_link='http://www.23us.so/top/allvisit_'
-    link_last='.html'
+    # start_urls = ['http://www.23us.so/top/allvisit_1.html']
+    # server_link='http://www.23us.so/top/allvisit_'
+    # link_last='.html'
+
+    start_urls = ['https://www.23us.so/modules/article/articlelist.php?fullflag=1&page=1']
+    server_link='https://www.23us.so/modules/article/articlelist.php?fullflag=1&page='
+    link_last=''
 
     #从start_requests发送请求
     def start_requests(self):
@@ -24,11 +28,13 @@ class dingdian(scrapy.Spider):
         max_num=max_num.split('/')[1]
         print("总排行榜最大页面数为："+max_num)
         #for i in max_num+1:
-        for i in range(0,int(max_num)):
+        # max_num = "1"
+        for i in range(18, int(max_num)):
             #构造总排行榜中每个页面的链接
-            page_url=self.server_link+str(i)+self.link_last
-            yield scrapy.Request(url=page_url,meta={'items':items},callback=self.parse2)
-
+            page_url=self.server_link+str(i+1)+self.link_last
+            print(page_url)
+            yield scrapy.Request(url=page_url, meta={'items':items},callback=self.parse2,dont_filter=True)
+            # yield scrapy.Request(url=page_url,meta={'items':items},callback=self.parse2)
 
     #访问总排行榜的每个页面
     def parse2(self,response):

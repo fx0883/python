@@ -6,8 +6,8 @@
     <meta http-equiv="Cache-Control" content="max-age=900">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content="红袖添香小说网手机版提供最新免费言情小说手机阅读及下载。包括言情小说，玄幻小说，穿越小说，都市小说，言情小说书库等。">
-    <title>红袖添香触屏版自适应手机wap小说网站模板下载【http://www.lanrenmb.com/yulexiuxian/xiaoshuo/】</title>
+    <meta name="description" content="51阅读手机版提供最新免费言情小说手机阅读及下载。包括言情小说，玄幻小说，穿越小说，都市小说，言情小说书库等。">
+    <title>51阅读</title>
     <link type="text/css" rel="stylesheet" href="{% static 'css/ipindex141022.css' %} " media="screen">
     <script src="
     {% static 'js/jquery-1.2.1.pack.js' %}"></script>
@@ -28,63 +28,65 @@
 </div>
 <div class="top">
     <ul class="fn-clear">
-        <li><a id="goCenter"></a></li>
+
         <li class="logo"><a></a></li>
         <li><a id="goSearch"></a></li>
     </ul>
 </div>
 <div id="jsSearch">
-    <form class="search" name="form1" action="http://s.hongxiu.com/wap/wapiphone.aspx">
-        <input name="query" value="药香毒妃，冷傲世子请走开" style="color: #ACACAC" type="text" id="query" class="input">
-        <input type="hidden" id="iftitle" name="iftitle" value="1">
-        <a name="Input" class="btn" href="javascript:void(0)javascript:;" onclick="form1.submit();">搜索</a></form>
-    <span class="more"><a href="javascript:void(0)http://s.hongxiu.com/wap/wapiphone.aspx?px=12">更多搜索&gt;&gt;</a></span>
-</div>
-<div id="jsUnlogin">
-    <form id="form" name="form" action="http://login.sns.hongxiu.com/waploginhox.aspx" method="post"
-          accept-charset="gb2312">
-        <div id="centerInp">
-            <div class="inp">
-                <span>用户名：</span><input name="htmlUserName" type="text" id="htmlUserName" class="tex"></div>
-            <div class="inp">
-                <span>密&nbsp;&nbsp;&nbsp;码：</span><input name="htmlPassword" type="password" id="htmlPassword"
-                                                         class="tex"></div>
+    <form class="search" name="form1" action="wap/search" method="post">
+        <input name="key" value="校花" style="color: #ACACAC" type="text" id="query" class="input">
+        <input type="submit" value="搜索">
 
-            <input type="hidden" id="url" name="url" value="http://m.hongxiu.com/">
-        </div>
-        <div class="check">
-            <input checked="checked" id="iskeeplogin" name="iskeeplogin" type="checkbox" value="true"><label
-                for="iskeeplogin">记住登录状态</label></div>
-        <div class="btn">
-            <a class="btn1" href="javascript:void(0)javascript:;" onclick="form.submit()">登录</a></div>
-        <span class="moredl"><a href="javascript:void(0)/r.ashx?t=loginnew">更多登录&gt;&gt;</a></span>
-
-        <div>
-            <a href="javascript:void(0)javascript:;"
-               onclick="window.location.href='https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=100266825&amp;state=wap(a)iphone(a)user(e)aspx&amp;scope=get_user_info,add_idol&amp;redirect_uri=login.sns.hongxiu.com/QQLogin/QQLoginPage.aspx';">QQ登陆</a>&nbsp;|&nbsp;<a
-                href="javascript:void(0)javascript:;" onclick="alipaylogin();">支付宝登陆</a>&nbsp;|&nbsp;<a
-                href="javascript:void(0)/r.ashx?t=reg">注册</a>&nbsp;|&nbsp;<a
-                href="javascript:void(0)http://wap.hongxiu.com/iphone/showhelp.aspx?id=23">找回密码</a></div>
     </form>
+
 </div>
-<div id="jsLogined">
-    <div>
-        <div id="centerInp1">
-            <div class="inp1">
-                会员帐号：<span id="jsusername"></span><a id="jsloginout" style="color: #e25e51; margin-left: 12px;">退出</a>
-            </div>
-            <div class="inp1" id="jsvip">
-                会员等级：<span id="jsVipClass"></span>&nbsp;&nbsp;&nbsp;&nbsp;红 袖 币：<span id="jsHXB"></span></div>
-        </div>
-        <div class="btn">
-            <a class="btn2" href="javascript:void(0)/r.ashx?t=pay">充值</a><a class="btn2"
-                                                                            href="javascript:void(0)/r.ashx?t=fav">藏书架</a><a
-                style="color: #e25e51;" href="javascript:void(0)/r.ashx?t=user">进入个人中心</a></div>
-    </div>
-</div>
+{#<div id="jsUnlogin">#}
+{#    <form id="form" name="form" action="http://login.sns.hongxiu.com/waploginhox.aspx" method="post"#}
+{#          accept-charset="gb2312">#}
+{#        <div id="centerInp">#}
+{#            <div class="inp">#}
+{#                <span>用户名：</span><input name="htmlUserName" type="text" id="htmlUserName" class="tex"></div>#}
+{#            <div class="inp">#}
+{#                <span>密&nbsp;&nbsp;&nbsp;码：</span><input name="htmlPassword" type="password" id="htmlPassword"#}
+{#                                                         class="tex"></div>#}
+{##}
+{#            <input type="hidden" id="url" name="url" value="http://m.hongxiu.com/">#}
+{#        </div>#}
+{#        <div class="check">#}
+{#            <input checked="checked" id="iskeeplogin" name="iskeeplogin" type="checkbox" value="true"><label#}
+{#                for="iskeeplogin">记住登录状态</label></div>#}
+{#        <div class="btn">#}
+{#            <a class="btn1" href="javascript:void(0)javascript:;" onclick="form.submit()">登录</a></div>#}
+{#        <span class="moredl"><a href="javascript:void(0)/r.ashx?t=loginnew">更多登录&gt;&gt;</a></span>#}
+{##}
+{#        <div>#}
+{#            <a href="javascript:void(0)javascript:;"#}
+{#               onclick="window.location.href='https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=100266825&amp;state=wap(a)iphone(a)user(e)aspx&amp;scope=get_user_info,add_idol&amp;redirect_uri=login.sns.hongxiu.com/QQLogin/QQLoginPage.aspx';">QQ登陆</a>&nbsp;|&nbsp;<a#}
+{#                href="javascript:void(0)javascript:;" onclick="alipaylogin();">支付宝登陆</a>&nbsp;|&nbsp;<a#}
+{#                href="javascript:void(0)/r.ashx?t=reg">注册</a>&nbsp;|&nbsp;<a#}
+{#                href="javascript:void(0)http://wap.hongxiu.com/iphone/showhelp.aspx?id=23">找回密码</a></div>#}
+{#    </form>#}
+{#</div>#}
+{#<div id="jsLogined">#}
+{#    <div>#}
+{#        <div id="centerInp1">#}
+{#            <div class="inp1">#}
+{#                会员帐号：<span id="jsusername"></span><a id="jsloginout" style="color: #e25e51; margin-left: 12px;">退出</a>#}
+{#            </div>#}
+{#            <div class="inp1" id="jsvip">#}
+{#                会员等级：<span id="jsVipClass"></span>&nbsp;&nbsp;&nbsp;&nbsp;红 袖 币：<span id="jsHXB"></span></div>#}
+{#        </div>#}
+{#        <div class="btn">#}
+{#            <a class="btn2" href="javascript:void(0)/r.ashx?t=pay">充值</a><a class="btn2"#}
+{#                                                                            href="javascript:void(0)/r.ashx?t=fav">藏书架</a><a#}
+{#                style="color: #e25e51;" href="javascript:void(0)/r.ashx?t=user">进入个人中心</a></div>#}
+{#    </div>#}
+{#</div>#}
 
 <script>inithead()</script>
 
+<!--
 <div class="nav indexnav">
     <a class="click" href="javascript:void(0)/">首页</a><a href="javascript:void(0)/r.ashx?t=toplistnew">排行</a><a
         href="list1.htm">分类</a><a href="javascript:void(0)/r.ashx?t=fav">书架</a><a
@@ -94,7 +96,7 @@
         href="javascript:void(0)/guyun.htm">古典</a><a href="javascript:void(0)/gaogan.htm">都市</a><a class="n_right"
                                                                                                    href="javascript:void(0)http://sns.wap.hongxiu.com/iphone/clientdown.aspx">客户端</a>
 </div>
-
+-->
 
 {% for Item in retAllNovelCategory %}
     <div>
@@ -104,7 +106,7 @@
 
 
         <div class="con">
-            <a href="wap/getNovelInfo/bookid/{{Item.recommend.chapterlistId}}">
+            <a href="wap/getNovelInfo/bookid/{{ Item.recommend.chapterlistId }}">
                 <img src="{{ Item.recommend.novel_imgurl }}">
                 <h3>{{ Item.recommend.novel_name }}</h3>
                 <p>{{ Item.recommend.novel_description }}</p>
@@ -115,7 +117,7 @@
 
             {% for bookItem in Item.novelList %}
                 {% if not forloop.first %}
-                    <li><a href="wap/getNovelInfo/bookid/{{bookItem.chapterlistId}}"
+                    <li><a href="wap/getNovelInfo/bookid/{{ bookItem.chapterlistId }}"
                            title="{{ bookItem.novel_name }}">{{ bookItem.novel_name }}</a></li>
 
                 {% endif %}
@@ -126,6 +128,7 @@
         </ol>
     </div>
 {% endfor %}
+<!--
 <div>
     <div class="title">
         公告列表
@@ -139,21 +142,28 @@
         </li>
     </ol>
 </div>
-
+-->
 
 <div class="footer">
-    <div class="version">
+  <!--  <div class="version">
         <a href="javascript:void(0)http://w.hongxiu.com">简约版</a><a
             href="javascript:void(0)http://pad.hongxiu.com">PAD版</a><a href="javascript:void(0)javascript:;"
                                                                        onclick="gotourl();">电脑版</a></div>
     <div class="footer-nav">
         <a href="javascript:void(0)http://sns.wap.hongxiu.com/iphone/help.aspx">帮助</a>|<a
-            href="javascript:void(0)http://sns.wap.hongxiu.com/iphone/friendlink.aspx">酷站导航</a></div>
+            href="javascript:void(0)http://sns.wap.hongxiu.com/iphone/friendlink.aspx">酷站导航</a>
+
+
+    </div>
+    -->
+
 </div>
 <div class="btm">
-    <span>hongxiu.cn&nbsp;©2016</span><a href="javascript:void(0)/nav.htm">快速导航</a><a
-        href="javascript:void(0)http://chat.wap.hongxiu.com/chatclient.aspx">在线客服</a></div>
+    <span>2018</span>
+<!--    <a href="javascript:void(0)/nav.htm">快速导航</a><a
+        href="javascript:void(0)http://chat.wap.hongxiu.com/chatclient.aspx">在线客服</a>
 
-
+-->
+</div>
 </body>
 </html>

@@ -14,6 +14,17 @@
     <script src="
     {% static 'js/jquery-1.2.1.pack.js' %}"></script>
     <script src="{% static 'js/ipindex140827.js' %}"></script>
+
+<script type="text/javascript">
+
+    localStorage.setItem("novelinfo","{{ chapterlist  }}")
+
+ localStorage.setItem("coffeeType", "mocha");
+
+</script>
+
+
+
 </head>
 
 <body style="position: static;">
@@ -21,8 +32,8 @@
     <ul>
         <li><a id="goBuck" href="javascript:history.go(-1)"></a></li>
         <li class="shuji">书籍详情</li>
-        <li><a id="goCenter"></a></li>
-        <li><a id="goHome" href="/wap/index"></a></li>
+        <!--<li><a id="goCenter"></a></li> -->
+        <li><a id="goHome" href="/api/wap"></a></li>
     </ul>
 </div>
 <div id="jsuser"></div>
@@ -36,17 +47,16 @@
     </ul>
 </div>
 
+<!--
 <ul class="goread">
-    <li><a href="javascript:void(0)http://sns.wap.hongxiu.com/iphone/clientdown.aspx"
-           class="green"><span>离线阅读</span></a></li>
-    <li><a href="javascript:void(0)/1311015/12597159.html" id="htmldianjiyuedu" class="begin">开始阅读</a></li>
-    <li class="green"><a id="jsFav">加入书架</a></li>
-</ul>
+{% for chapterItem in chapterlist %}
+    {% if forloop.first %}<li><a href="../../getChapterInfo/bookid/{{ chapterlistId }}/chapterid/{{chapterItem.section_id}}" id="htmldianjiyuedu" class="begin">开始阅读</a></li>{% endif %}
 
-<div class="lastread" id="jsLastread">
-    <dl></dl>
-    <div class="title">上次读到：<a id="jsLastLink" src=""></a></div>
-</div>
+  {% endfor %}
+</ul>
+-->
+
+
 
 <div class="detail_p">
     <div id="htmljieshao">{{ novel_description }}</div>
@@ -57,22 +67,25 @@
     <li class="g_btn"><a href="#">章节目录</a></li>
     {% for chapterItem in chapterlist %}
 
-            <li><a href="{{ chapterItem }}">{{ chapterItem }}</a></li>
+
+
+
+        <li><a href="../../getChapterInfo/bookid/{{ chapterlistId }}/chapterid/{{chapterItem.section_id}}">{{ chapterItem.section_name }}</a></li>
+
+
 
 
     {% endfor %}
-
-
 </ol>
 
 <div class="footer">
-    <div class="version"><a href="javascript:void(0)http://w.hongxiu.com/1311015/index.html">简约版</a><a
+<!--    <div class="version"><a href="javascript:void(0)http://w.hongxiu.com/1311015/index.html">简约版</a><a
             href="javascript:void(0)http://pad.hongxiu.com/1311015/index.html">PAD版</a><a
             href="javascript:void(0)http://hongxiu.cn/clientdown/">客户端下载</a></div>
+            -->
 </div>
 
-<footer><span>hongxiu.cn&nbsp;?2014</span><a href="javascript:void(0)/DirIP/?i=12">快速导航</a> <a
-        href="javascript:void(0)http://m.53kf.com/62806269/54/1" target="_blank">在线客服</a></footer>
+<footer><span>2018</span></footer>
 
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 function inithead() {
     if (IsLoginIn() == true) {
         $("#goCenter").attr("style", "background-position: -10px -40px;");
@@ -28,15 +27,19 @@ function inithead() {
         $("#jsSearch").toggle("fast")
     });
 }
+
 function getVipClass(i) {
-    if (i == 0)return "普通VIP会员"; else if (i == 1)return "初级VIP会员"; else if (i == 2)return "高级VIP会员"; else if (i == 3)return "至尊VIP会员"; else return ""
+    if (i == 0) return "普通VIP会员"; else if (i == 1) return "初级VIP会员"; else if (i == 2) return "高级VIP会员"; else if (i == 3) return "至尊VIP会员"; else return ""
 }
+
 function headHideAll(obj) {
     if (obj != "jsUnlogin") $("#jsUnlogin").hide();
     if (obj != "jsLogined") $("#jsLogined").hide();
     if (obj != "jsSearch") $("#jsSearch").hide();
 }
+
 var baseHotIndex = 1;
+
 function initmid() {
     showReadHistory();
     setInterval("daojishi()", 1000);
@@ -53,7 +56,9 @@ function initmid() {
         midShow(4)
     });
 }
+
 var baseTheTime = new Date();
+
 function daojishi() {
     baseTheTime.setTime(baseTheTime.getTime() + 1000);
     var h = 23 - baseTheTime.getHours();
@@ -67,6 +72,7 @@ function daojishi() {
     if (s < 10) s = "0" + s;
     $(".daojishi").html("(倒计时" + h + ":" + m + ":" + s + ")");
 }
+
 function midShow(i) {
     if (i == baseHotIndex)
         return;
@@ -85,6 +91,7 @@ function midShow(i) {
     $("#hotinfo" + i).animate({marginLeft: "0"}, 200);
     baseHotIndex = i;
 }
+
 function getCookiesWithKey(key, c_name) {
     if (document.cookie.length > 0) {
         var k_start = document.cookie.indexOf(key + "=");
@@ -94,7 +101,7 @@ function getCookiesWithKey(key, c_name) {
         var k_end = document.cookie.indexOf(";", k_start);
         if (k_end == -1) k_end = document.cookie.length;
         var cookiesWithKey = unescape(document.cookie.substring(k_start, k_end));
-        if (c_name == "")return cookiesWithKey;
+        if (c_name == "") return cookiesWithKey;
         var cookies = cookiesWithKey.split("&");
         for (var i = 0; i < cookies.length; i++) {
             if (cookies[i].split("=")[0] == c_name) {
@@ -104,6 +111,7 @@ function getCookiesWithKey(key, c_name) {
     }
     return ""
 }
+
 function IsLoginIn() {
     var uname = getCookiesWithKey("21rednet", "UserName");
     if (uname == null)
@@ -111,6 +119,7 @@ function IsLoginIn() {
         return false; else
         return true;
 }
+
 function getSystem() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.indexOf("iphone") > 0 || ua.indexOf("ipad") > 0)
@@ -119,6 +128,7 @@ function getSystem() {
         return "And"; else
         return "Unknow";
 }
+
 function getReadHistory() {
     var cookieString = new String(document.cookie);
     var cookieHeader = "ReadHistory=";
@@ -132,6 +142,7 @@ function getReadHistory() {
     }
     return myvalue;
 }
+
 function showReadHistory() {
     var _readjson = getReadHistory();
     if (_readjson == "")
@@ -163,21 +174,25 @@ function showReadHistory() {
     if (_html != "")
         $("#divHistorymore").html(_html);
 }
+
 function loginout() {
     var _url = top.location.href;
     _url = "http://login.sns.hongxiu.com/comloginout.aspx?url=" + escape(_url);
     setTimeout("window.location='" + _url + "'", 0);
 }
+
 function isVertical() {
     var _or = window.orientation;
     if (_or == 0 || _or == 180)
         return true; else
         return false;
 }
+
 function gotourl() {
     document.cookie = "beginrootpage=1;domain=hongxiu.com;path=/";
     window.location = "http://www.hongxiu.com";
 }
+
 function donewtips() {
     var ua = navigator.userAgent;
     var low = ua.toLowerCase();
@@ -198,6 +213,7 @@ function donewtips() {
     else
         $("#tip_download").css('display', 'none');
 }
+
 function getStore() {
     if (IsLoginIn() == false)
         return;
@@ -237,9 +253,11 @@ function getStore() {
         document.cookie = "SystemTipCount={\"StoreUpdateCount\":0,\"SystemLastMessageTip\":\"\"};expires=" + Then.toGMTString() + ";domain=" + document.domain + ";path=/";
     });
 }
+
 function jsstoreup() {
     $('#jsstorebg,#jsstoretxt').slideUp(1000);
 }
+
 function addCookie(objName, objValue, objHours) {
     var str = objName + "=" + escape(objValue);
     if (objHours > 0) {
@@ -251,13 +269,17 @@ function addCookie(objName, objValue, objHours) {
     document.cookie = str + ";domain=hongxiu.com;path=/";
     $("#pop_xz").css('display', 'none');
 }
+
 function getCookie(objName) {
     var arrStr = document.cookie.split("; ");
     for (var i = 0; i < arrStr.length; i++) {
         var temp = arrStr[i].split("=");
-        if (temp[0] == objName)return unescape(temp[1]);
+        if (temp[0] == objName)
+        // return unescape(temp[1]);
+            return temp[1];
     }
 }
+
 function CheckDivClientCookie(name) {
     var str = getCookie(name);
     if (str == "1")
@@ -266,3 +288,68 @@ function CheckDivClientCookie(name) {
         $("#pop_xz").css('display', 'block');
     }
 }
+
+function getNextPage(curSectionId) {
+
+
+    var strNovelInfo = localStorage.getItem('novelinfo');
+
+
+    // var strNovelInfo = getCookie('novelinfo');
+    // var strNovelInfo = localStorage.getItem('novelinfo');
+    strNovelInfo = strNovelInfo.replace(/\&#39;/g, "\"")
+
+
+    var chapterlistInfo = JSON.parse(strNovelInfo);
+    var index = chapterlistInfo.findIndex(function (value, index, obj) {
+        return value.section_id == curSectionId
+    });
+
+    var count = chapterlistInfo.length;
+    var ret = null;
+    if (index < count) {
+        ret = chapterlistInfo[index + 1];
+
+        // getChapterInfo/bookid/{{ chapterlistId }}/chapterid/{{chapterItem.section_id}}
+        window.open("../chapterid/" + ret.section_id, '_self', '');
+    }
+    return ret;
+}
+
+
+function getPrePage(curSectionId) {
+
+
+    var strNovelInfo = localStorage.getItem('novelinfo');
+
+    strNovelInfo = strNovelInfo.replace(/\&#39;/g, "\"")
+
+
+    var chapterlistInfo = JSON.parse(strNovelInfo);
+    var index = chapterlistInfo.findIndex(function (value, index, obj) {
+        return value.section_id == curSectionId
+    });
+
+    var count = chapterlistInfo.length;
+    var ret = null;
+    if (index > 0) {
+        ret = chapterlistInfo[index - 1];
+
+        // getChapterInfo/bookid/{{ chapterlistId }}/chapterid/{{chapterItem.section_id}}
+        window.open("../chapterid/" + ret.section_id, '_self', '');
+    }
+    return ret;
+}
+
+function fsi(number) {
+    var s_size = $("#htmlContent").css("font-size"),
+        s_number = parseFloat(s_size);
+    if ((s_number < 30 && number > 0) || (s_number > 14 && number < 0)) {
+        var newSize = s_number + number;
+        $("#htmlContent").css("font-size", newSize);
+        $("#jszihao").text(newSize + "px");
+    }
+    else
+        return false;
+}
+
