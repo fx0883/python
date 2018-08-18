@@ -2,99 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3846dd-eb1a-4e84-85cf-17d23fbc7c93" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Dingdian/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/zhengwen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/chapterinfo.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/Dingdian.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/Dingdian.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/verifyspider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/bookimg/0ac59a78-9c73-11e8-bc51-6003088a50b6.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/spiders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/spiders/dingdian.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/spiders/dingdian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/Dingdian/spiders/downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/Dingdian/spiders/downloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dingdian/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../Dingdian/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/book630crawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/book630crawler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/db/bookmysqldb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/db/bookmysqldb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/redisopera.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/redisopera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/book603.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/book603.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/downloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/pconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/spiders/pconfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/book630crawler/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/book630crawler/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../book630crawler/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../book630crawler/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/novelweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/novelweb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelapp/wapview.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelapp/wapview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelweb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelweb/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelweb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelweb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novelweb/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/novelweb/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/ipindex140827.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ipindex140827.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article.htm" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/defaultip20141118.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/ipguanindex140320.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/ipindex141022.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css/rank_class_collect_down.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/20160517072050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/read.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/shouye.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/ipindex140827.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/js/jquery-1.2.1.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/templates/list.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/txtcrawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/txtcrawler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/db/bookmysqldb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/db/bookmysqldb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/redisopera.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/redisopera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/downloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/pconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/pconfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/txtnovel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/spiders/txtnovel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../txtcrawler/txtcrawler/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../txtcrawler/txtcrawler/util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,11 +31,11 @@
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -193,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/novelapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-454">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="166">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="32" />
               <folding>
                 <element signature="e#25#61#0" expanded="true" />
               </folding>
@@ -309,7 +221,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1259" />
     <option name="height" value="722" />
@@ -512,8 +424,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1259" height="722" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1259" height="722" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2621128" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -866,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/novelapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="166">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="e#25#61#0" expanded="true" />
           </folding>
