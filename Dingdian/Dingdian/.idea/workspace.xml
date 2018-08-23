@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4b0b78e-26ba-4d55-887a-35cf9d5e8cd8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/verifyspider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/.idea/mangaedencrawl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/autoproxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl/mangaedencrawl/user_agents.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookimg/0ac59a78-9c73-11e8-bc51-6003088a50b6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../novelweb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../novelweb/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,16 +23,20 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Dingdian$verifyspider.coverage" NAME="verifyspider Coverage Results" MODIFIED="1534580657059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Dingdian$main.coverage" NAME="main Coverage Results" MODIFIED="1534580461386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dingdian$main.coverage" NAME="main Coverage Results" MODIFIED="1534985148878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1273076591">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -41,13 +52,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="4" />
-          <entry key="py" value="11" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="Python" value="11" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
     </session>
@@ -57,11 +68,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spiders/dingdian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-155">
-              <caret line="13" column="85" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="85" />
+            <state relative-caret-position="555">
+              <caret line="39" selection-start-line="39" selection-end-line="58" selection-end-column="99" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="728">
+              <caret line="72" column="48" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -72,17 +101,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1762">
-              <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+            <state relative-caret-position="91">
+              <caret line="47" column="43" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="43" />
               <folding>
-                <element signature="e#265#296#0" expanded="true" />
+                <element signature="e#267#298#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spiders/downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
+            <state relative-caret-position="390">
               <caret line="32" column="47" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="47" />
               <folding>
                 <element signature="e#168#205#0" expanded="true" />
@@ -100,14 +124,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/verifyspider.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user_agents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+            <state relative-caret-position="990">
+              <caret line="66" selection-start-line="2" selection-end-line="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#168#194#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -134,6 +176,7 @@
       <find>novel_list</find>
       <find>novel_id</find>
       <find>client</find>
+      <find>find</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,13 +187,13 @@
       <list>
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/items.py" />
-        <option value="$PROJECT_DIR$/middlewares.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/verifyresult/2018-08-18-provinces.json" />
         <option value="$PROJECT_DIR$/pipelines.py" />
         <option value="$PROJECT_DIR$/spiders/dingdian.py" />
         <option value="$PROJECT_DIR$/verifyspider.py" />
         <option value="$PROJECT_DIR$/verifyresult/2018-08-18-16:24:29.json" />
+        <option value="$PROJECT_DIR$/middlewares.py" />
       </list>
     </option>
   </component>
@@ -160,10 +203,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1259" />
-    <option name="height" value="722" />
+    <option name="width" value="1280" />
+    <option name="height" value="729" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -171,18 +214,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Dingdian" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dingdian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dingdian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dingdian" type="462c0819:PsiDirectoryNode" />
-              <item name="bookimg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dingdian" type="b2602c69:ProjectViewProjectNode" />
@@ -198,6 +235,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.verifyspider">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dingdian" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,8 +335,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.verifyspider" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.verifyspider" />
       </list>
     </recent_temporary>
   </component>
@@ -316,21 +354,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3078125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33279485" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.66613925" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49921876" weight="0.41455695" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.70840067" weight="0.6661238" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4983845" weight="0.41318327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32874617" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50078124" side_tool="true" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.29159936" side_tool="true" visible="true" weight="0.6661238" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -364,19 +403,9 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pipelines.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pipelines.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pipelines.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/middlewares.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -456,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943128/lxml/objectify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -484,43 +506,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlewares.py">
+    <entry file="file://$PROJECT_DIR$/verifyresult/2018-08-18-provinces.json" />
+    <entry file="file://$PROJECT_DIR$/verifyresult/2018-08-18-16:22:51.json" />
+    <entry file="file://$PROJECT_DIR$/verifyresult/2018-08-18-16:24:29.json" />
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verifyspider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="675">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/zope/interface/common/sequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="134" column="8" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiders/dingdian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="39" selection-start-line="39" selection-end-line="58" selection-end-column="99" />
           <folding>
-            <element signature="e#168#194#0" expanded="true" />
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_agents.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="66" selection-start-line="2" selection-end-line="66" />
+        <state relative-caret-position="15">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verifyresult/result.json">
+    <entry file="file://$PROJECT_DIR$/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/spiders/downloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
+        <state relative-caret-position="390">
           <caret line="32" column="47" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="47" />
           <folding>
             <element signature="e#168#205#0" expanded="true" />
@@ -528,56 +556,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/user_agents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" selection-start-line="2" selection-end-line="66" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
+    <entry file="file://$PROJECT_DIR$/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#168#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/verifyresult/result.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1762">
-          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+        <state relative-caret-position="91">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="43" />
           <folding>
-            <element signature="e#265#296#0" expanded="true" />
+            <element signature="e#267#298#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spiders/dingdian.py">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="13" column="85" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="85" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verifyresult/2018-08-18-provinces.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17025">
-          <caret line="1135" column="1" selection-start-line="1135" selection-start-column="1" selection-end-line="1135" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verifyresult/2018-08-18-16:22:51.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verifyresult/2018-08-18-16:24:29.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/verifyspider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="728">
+          <caret line="72" column="48" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="48" />
         </state>
       </provider>
     </entry>
