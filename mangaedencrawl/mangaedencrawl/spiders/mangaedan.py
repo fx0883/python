@@ -2,19 +2,21 @@
 import scrapy
 import json
 from pymongo import MongoClient
+import uuid
 
 class MangaedanSpider(scrapy.Spider):
     name = 'mangaedan'
     allowed_domains = ['mangaeden.com']
     server_link = 'https://www.mangaeden.com/api/list/0/?p='
-    start_urls = ['https://www.mangaeden.com/api/list/0/?p=0']
+    start_urls = []
 
     chapterlist_api = 'https://www.mangaeden.com/api/manga/'
     chapterinfo_api = 'https://www.mangaeden.com/api/chapter/'
 
     def __init__(self):
-        for i in range(2, 3):
+        for i in range(0, 3):
             page_url = self.server_link + str(i)
+            print(page_url)
             self.start_urls.append(page_url)
 
 
@@ -44,11 +46,12 @@ class MangaedanSpider(scrapy.Spider):
             yield scrapy.Request(url=chapterlisturl, meta={'mangaedenid': item['i']}, callback=self.parse2, dont_filter=True)
         client.close()
 
-    def parse2(self,response):
+    def parse2(self, response):
         print(response.url)
         mangaedenid = response.meta['mangaedenid']
         mangainfo = json.loads(response.body.decode("utf-8"))
         mangainfo["mangaedenid"] = mangaedenid
+        mangainfo["_id"] = str(uuid.uuid1())
         # for chapterItem in mangainfo['chapters']:
         #     chapterinfourl = self.chapterinfo_api + item[3] + "/"
         #     yield scrapy.Request(url=chapterinfourl, meta={'chapterid': item[3]}, callback=self.parse3, dont_filter=True)

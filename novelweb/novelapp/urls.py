@@ -17,6 +17,7 @@ Including another URLconf
 from django.urls import path
 from . import views
 from . import wapview
+from . import mangaview
 
 urlpatterns = [
     path("novelList/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>", views.getNovelList, name='getNovelList'),
@@ -34,4 +35,11 @@ urlpatterns = [
          name='getChapterInfo'),
     path("wap/search", wapview.search, name='search'),
 
+
+    path("mangaList/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>", mangaview.getMangaList, name='getMangaList'),
+    path("searchMangaList/keyword/<str:keyword>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
+         mangaview.searchMangalList, name='searchMangalList'),
+    path("mangaid/<str:mangaid>/chapterid/<str:chapterid>", mangaview.getMangaChapterById, name='getMangaChapterById'),
+    path("manage/categoryName/<str:categoryName>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
+         mangaview.getCategoryMangaList, name='getCategoryMangaList'),
 ]
