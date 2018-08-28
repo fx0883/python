@@ -83,6 +83,7 @@ class DingdianxiaoshuoPipeline(object):
 
                 if section_url_downloaded_collection.find_one({"url": item["novel_url"]}) != None:
                     print(item["novel_name"] + "========>已经下载过了......")
+                    client.close()
                     return item
                 index2 = 1
                 print("正在下载：" + item["novel_name"])

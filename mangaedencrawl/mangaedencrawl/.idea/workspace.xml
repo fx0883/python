@@ -26,7 +26,7 @@
     <session id="672863870">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="2" />
@@ -91,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spiders/mangaedan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="270">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
                 <marker date="1535418937352" expanded="true" signature="426:950" ph="..." />
@@ -337,7 +337,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.61087865" visible="true" weight="0.28336078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61087865" weight="0.41350907" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.62426776" weight="0.33937398" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,7 +345,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.3294893" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294893" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.38912135" side_tool="true" visible="true" weight="0.28336078" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.38912135" side_tool="true" weight="0.28336078" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3294893" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3294893" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3294893" />
@@ -539,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spiders/mangaedan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="270">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
             <marker date="1535418937352" expanded="true" signature="426:950" ph="..." />

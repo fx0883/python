@@ -12,7 +12,7 @@ class Mangaedan2Spider(scrapy.Spider):
     allowed_domains = ['mangaedan.com']
     start_urls = ['http://www.baidu.com']
     pageIndex = 0
-    pageSize = 100
+    pageSize = 1000
     chapter_url = "https://www.mangaeden.com/api/chapter/"
 
 
@@ -53,6 +53,7 @@ class Mangaedan2Spider(scrapy.Spider):
         chapterinfo['mangaedenid'] = mangaedenid
         chapterinfo['chapterid'] = chapterid
         chapterinfo["_id"] = str(uuid.uuid1())
+        chapterinfo["url"] = response.url
         # for chapterItem in mangainfo['chapters']:
         #     chapterinfourl = self.chapterinfo_api + item[3] + "/"
         #     yield scrapy.Request(url=chapterinfourl, meta={'chapterid': item[3]}, callback=self.parse3, dont_filter=True)
