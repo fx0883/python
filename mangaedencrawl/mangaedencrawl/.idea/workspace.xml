@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f23a30b-8e93-4e30-bf34-b163c7d748c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl2/mangaedencrawl2/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../mangaedencrawl2/mangaedencrawl2/user_agents.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Dingdian/Dingdian/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Dingdian/Dingdian/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Dingdian/Dingdian/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Dingdian/Dingdian/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Dingdian/Dingdian/spiders/downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Dingdian/Dingdian/spiders/downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Dingdian/Dingdian/verifyspider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Dingdian/Dingdian/verifyspider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spiders/mangaedan.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/mangaedan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mangaedencrawl2/mangaedencrawl2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../mangaedencrawl2/mangaedencrawl2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../novelweb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../novelweb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../novelweb/novelapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../novelweb/novelapp/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,23 +19,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mangaedencrawl$main.coverage" NAME="main Coverage Results" MODIFIED="1535339482757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mangaedencrawl$main.coverage" NAME="main Coverage Results" MODIFIED="1535419323480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mangaedencrawl$mangaedan.coverage" NAME="mangaedan Coverage Results" MODIFIED="1534816041415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spiders" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="672863870">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,12 +50,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1000" />
+          <entry key="py" value="1023" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1000" />
+          <entry key="Python" value="1023" />
         </counts>
       </usages-collector>
     </session>
@@ -87,14 +88,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spiders/mangaedan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="240">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
-                <marker date="1535253941315" expanded="true" signature="426:949" ph="..." />
+                <marker date="1535418937352" expanded="true" signature="426:950" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="125">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="e#194#225#0" expanded="true" />
               </folding>
@@ -148,11 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongoconn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="416">
+              <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -186,8 +187,8 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/myconn.py" />
         <option value="$PROJECT_DIR$/mongoconn.py" />
-        <option value="$PROJECT_DIR$/spiders/mangaedan.py" />
         <option value="$PROJECT_DIR$/pipelines.py" />
+        <option value="$PROJECT_DIR$/spiders/mangaedan.py" />
       </list>
     </option>
   </component>
@@ -197,7 +198,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1237" />
     <option name="height" value="722" />
@@ -329,14 +330,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1237" height="722" extended-state="1" />
+    <frame x="0" y="23" width="1237" height="722" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31715482" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32217574" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6117155" weight="0.41350907" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.61087865" visible="true" weight="0.28336078" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.62426776" weight="0.33937398" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,7 +345,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.3294893" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294893" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3882845" side_tool="true" weight="0.41350907" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.38912135" side_tool="true" visible="true" weight="0.28336078" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3294893" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3294893" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3294893" />
@@ -491,17 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spiders/mangaedan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1535253941315" expanded="true" signature="426:949" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/twisted/internet/task.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10065">
@@ -530,20 +520,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mongoconn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="125">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding>
             <element signature="e#194#225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongoconn.py">
+    <entry file="file://$PROJECT_DIR$/spiders/mangaedan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+            <marker date="1535418937352" expanded="true" signature="426:950" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -14,7 +14,7 @@ class MangaedanSpider(scrapy.Spider):
     chapterinfo_api = 'https://www.mangaeden.com/api/chapter/'
 
     def __init__(self):
-        for i in range(0, 3):
+        for i in range(0, 40):
             page_url = self.server_link + str(i)
             print(page_url)
             self.start_urls.append(page_url)

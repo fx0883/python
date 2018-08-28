@@ -16,22 +16,26 @@ from mongoconn import MONGODB_CONFIG
 
 class MangaedencrawlPipeline(object):
     def process_item(self, item, spider):
-        if len(item['chapters']) > 0:
-            mongoconn = MongoConn()
-            # 连接数据库
-            db = mongoconn.db
+        try:
+            if len(item['chapters']) > 0:
+                mongoconn = MongoConn()
+                # 连接数据库
+                db = mongoconn.db
 
-            categoriesstr = ','.join(item['categories'])
-            item['categoriesstr'] = categoriesstr
+                categoriesstr = ','.join(item['categories'])
+                item['categoriesstr'] = categoriesstr
 
-            mangacategory = db['mangacategory']
-            for categoryItem in item['categories']:
-                if not mangacategory.find_one({"category": categoryItem}):
-                    mangacategory.insert({"_id": str(uuid.uuid1()), "category": categoryItem})
+                mangacategory = db['mangacategory']
+                for categoryItem in item['categories']:
+                    if not mangacategory.find_one({"category": categoryItem}):
+                        mangacategory.insert({"_id": str(uuid.uuid1()), "category": categoryItem})
 
-            mangalist = db['mangalist']
-            if not mangalist.find_one({"mangaedenid": item["mangaedenid"]}):
-                mangalist.insert(item)
-            mongoconn.close()
-            print(item)
-        return item
+                mangalist = db['mangalist']
+                if not mangalist.find_one({"mangaedenid": item["mangaedenid"]}):
+                    mangalist.insert(item)
+                mongoconn.close()
+                print(item)
+            return item
+        except Exception as e:
+            print(e)
+

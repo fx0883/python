@@ -17,12 +17,14 @@ rets = novel_list.find()
 errornovellist = []
 for item in rets:
     print(item)
-    chapterCount = len(item['novel_section_urls'])
+    chapterCount = item['novel_section_urls']
     chapterid = item['chapterlistId']
     chapter_list = db[chapterid]
     chapter_listCount = chapter_list.find().count()
     if chapterCount != chapter_listCount:
-        errornovellist.append({"novel_name": item['novel_name'], "novel_url": item["novel_url"]})
+        errornovellist.append({"novel_name": item['novel_name'],
+                               "novel_url": item["novel_url"],
+                               "novel_md5": item["novel_md5"]})
 client.close()
 
 
