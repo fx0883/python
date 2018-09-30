@@ -11,11 +11,17 @@ import settings
 
 class Mangaedencrawl2Pipeline(object):
     def process_item(self, item, spider):
+
+
+
         client = MongoClient(settings.MangadbConfig["url"])
         # 连接数据库
         db = client.mangaeden
 
         chapterlist = db[item['mangaedenid']]
+
+
+
 
         section_url_downloaded_collection = db.section_url_collection
         # index=1
@@ -26,7 +32,7 @@ class Mangaedencrawl2Pipeline(object):
             return item
         else:
             section_url_downloaded_collection.insert({"url": item["url"]})
-        chapterlist.insert(item)
+            chapterlist.insert(item)
         client.close()
 
         return item
