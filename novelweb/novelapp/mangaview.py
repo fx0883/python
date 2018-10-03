@@ -97,4 +97,21 @@ def getCategoryMangaList(request,categoryName,pageIndex,pageSize):
     return JsonResponse({"result": 0, "novellist": rets})
 
 
+@csrf_exempt
+def getCategoryNames(request):
+    client = MongoClient(MangadbConfig["url"])
+    # 连接数据库
+    db = client.mangaeden
+    # 获取booklist集合
+    categoryList = db["mangacategory"]
+
+    retCategory = categoryList.find()
+    retAllNovelCategory = []
+    for itemCategory in retCategory:
+        categoryName = itemCategory['category']
+        retAllNovelCategory.append(categoryName)
+
+    client.close()
+    return JsonResponse({"result": 0, "categoryNames": retAllNovelCategory})
+
 
