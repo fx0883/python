@@ -42,4 +42,6 @@ urlpatterns = [
     path("mangaid/<str:mangaid>/chapterid/<str:chapterid>", mangaview.getMangaChapterById, name='getMangaChapterById'),
     path("manage/categoryName/<str:categoryName>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
          mangaview.getCategoryMangaList, name='getCategoryMangaList'),
+    path("manage/categoryNames",
+         mangaview.getCategoryNames, name='getCategoryNames'),
 ]
