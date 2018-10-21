@@ -48,4 +48,9 @@ urlpatterns = [
     path("mangaList/mangaedenid", mangaview.getMangaByMangaId, name='getMangaByMangaId'),
     path("searchMangaList/author/<str:author>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
          mangaview.searchMangalListByAuthor, name='searchMangalListByAuthor'),
+
+    path("manga/reportBad",
+         mangaview.reportBad, name='reportBad'),
+    path("manga/getReportBad",
+         mangaview.getReportBad, name='getReportBad'),
 ]

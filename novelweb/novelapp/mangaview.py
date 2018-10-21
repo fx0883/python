@@ -7,7 +7,7 @@ from django.core.handlers.wsgi import WSGIRequest
 import json
 import simplejson
 from pymongo import DESCENDING
-
+from django.views.decorators.cache import cache_page
 # import bson.objectid
 
 
@@ -21,6 +21,7 @@ MangadbConfig = {
 }
 
 @csrf_exempt
+@cache_page(60 * 15)  # 秒数，这里指缓存 15 分钟，不直接写900是为了提高可读性
 def getMangaList(request):
 
     pageIndex = 0
@@ -50,11 +51,26 @@ def getMangaList(request):
             searchdic["$or"].append({"categoriesstr": {'$regex': ".*" + categoryName + ".*"}})
         if sortField == None:
             searchRes = manga_list.find(searchdic).skip(index).limit(pageSize)
+        elif sortField == "hits":
+            searchRes = manga_list.find(searchdic).sort([{"hits", -1}]).skip(index).limit(pageSize)
+        elif sortField == "create":
+            searchRes = manga_list.find(searchdic).sort([{"create", -1}]).skip(index).limit(pageSize)
+        elif sortField == "last_chapter_date":
+            searchRes = manga_list.find(searchdic).sort([{"last_chapter_date", -1}]).skip(index).limit(pageSize)
+
         else:
             searchRes = manga_list.find(searchdic).sort([{sortField, -1}]).skip(index).limit(pageSize)
     else:
         if sortField == None:
             searchRes = manga_list.find().skip(index).limit(pageSize)
+        elif sortField == "hits":
+            # searchRes = manga_list.find().skip(index).limit(pageSize)
+            searchRes = manga_list.find().sort([{"hits", -1}]).skip(index).limit(pageSize)
+            # .hint([{"hits", -1}])
+        elif sortField == "create":
+            searchRes = manga_list.find().sort([{"create", -1}]).skip(index).limit(pageSize)
+        elif sortField == "last_chapter_date":
+            searchRes = manga_list.find().sort([{"last_chapter_date", -1}]).skip(index).limit(pageSize)
         else:
             searchRes = manga_list.find().sort([{sortField, -1}]).skip(index).limit(pageSize)
     total = searchRes.count()
@@ -105,10 +121,13 @@ def searchMangalList(request):
         keyword = received_json_data["keyword"]
         if "sortField" in received_json_data.keys():
             sortField = received_json_data["sortField"]
+            # sortField = str(sortField)
         if "categoryNames" in received_json_data.keys():
             categoryNames = received_json_data["categoryNames"]
     else:
         return JsonResponse({"result": -1, "mangalist":[]})
+
+
     client = MongoClient(MangadbConfig["url"])
     # 连接数据库
     db = client.mangaeden
@@ -116,7 +135,8 @@ def searchMangalList(request):
 
     searchdic1 = {"$or":[
         {"title": {'$regex': ".*"+keyword+".*"}},
-        {"author": {'$regex': ".*"+keyword+".*"}}
+        {"author": {'$regex': ".*"+keyword+".*"}},
+        {"aka":{'$regex': ".*"+keyword+".*"}}
     ]}
     searchdic2 = None
     searchdic = None
@@ -133,6 +153,12 @@ def searchMangalList(request):
     searchRes = None
     if sortField == None:
         searchRes = manga_list.find(searchdic).skip(index).limit(pageSize)
+    elif sortField == "hits":
+        searchRes = manga_list.find(searchdic).sort([{"hits", -1}]).skip(index).limit(pageSize)
+    elif sortField == "create":
+        searchRes = manga_list.find(searchdic).sort([{"create", -1}]).skip(index).limit(pageSize)
+    elif sortField == "last_chapter_date":
+        searchRes = manga_list.find(searchdic).sort([{"last_chapter_date", -1}]).skip(index).limit(pageSize)
     else:
         searchRes = manga_list.find(searchdic).sort([{sortField, -1}]).skip(index).limit(pageSize)
     total = searchRes.count()
@@ -217,3 +243,48 @@ def getCategoryNames(request):
     return JsonResponse({"result": 0,"total":total, "categoryNames": retAllNovelCategory})
 
 
+
+@csrf_exempt
+def reportBad(request):
+    client=None
+    try:
+        received_json_data = None
+        if request.method == 'POST':
+            received_json_data = simplejson.loads(request.body)
+            print(received_json_data)
+        else:
+            return JsonResponse({"result": -1})
+
+
+        client = MongoClient(MangadbConfig["url"])
+        # 连接数据库
+        db = client.mangaeden
+        reportbad_list = db["reportbadlist"]
+
+        reportbad_list.insert(received_json_data)
+        client.close()
+    except:
+        client.close()
+        return JsonResponse({"result": -1})
+    return JsonResponse({"result": 1,"total":1})
+
+@csrf_exempt
+def getReportBad(request):
+    client=None
+    try:
+        client = MongoClient(MangadbConfig["url"])
+        # 连接数据库
+        db = client.mangaeden
+        reportbad_list = db["reportbadlist"]
+
+        searchRes = reportbad_list.find()
+        rets = []
+        for item in searchRes:
+            rets.append(item)
+            print(item)
+        client.close()
+        return JsonResponse({"result": 1,"badlist":rets})
+    except:
+        client.close()
+        return JsonResponse({"result": -1})
+    return JsonResponse({"result": -1})
