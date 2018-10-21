@@ -36,10 +36,21 @@ urlpatterns = [
     path("wap/search", wapview.search, name='search'),
 
 
-    path("mangaList/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>", mangaview.getMangaList, name='getMangaList'),
-    path("searchMangaList/keyword/<str:keyword>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
+    path("mangaList", mangaview.getMangaList, name='getMangaList'),
+    path("search",
          mangaview.searchMangalList, name='searchMangalList'),
     path("mangaid/<str:mangaid>/chapterid/<str:chapterid>", mangaview.getMangaChapterById, name='getMangaChapterById'),
-    path("manage/categoryName/<str:categoryName>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
+    path("manga/categoryName/<str:categoryName>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
          mangaview.getCategoryMangaList, name='getCategoryMangaList'),
+    path("manga/categoryNames",
+         mangaview.getCategoryNames, name='getCategoryNames'),
+
+    path("mangaList/mangaedenid", mangaview.getMangaByMangaId, name='getMangaByMangaId'),
+    path("searchMangaList/author/<str:author>/pageIndex/<int:pageIndex>/pageSize/<int:pageSize>",
+         mangaview.searchMangalListByAuthor, name='searchMangalListByAuthor'),
+
+    path("manga/reportBad",
+         mangaview.reportBad, name='reportBad'),
+    path("manga/getReportBad",
+         mangaview.getReportBad, name='getReportBad'),
 ]
