@@ -10,7 +10,7 @@ from pymongo import DESCENDING
 from django.views.decorators.cache import cache_page
 # import bson.objectid
 
-
+import time
 
 
 # @csrf_exempt
@@ -65,7 +65,12 @@ def getMangaList(request):
             searchRes = manga_list.find().skip(index).limit(pageSize)
         elif sortField == "hits":
             # searchRes = manga_list.find().skip(index).limit(pageSize)
-            searchRes = manga_list.find().sort([{"hits", -1}]).skip(index).limit(pageSize)
+            # searchRes = manga_list.find().sort([{"hits", -1}]).skip(index).limit(pageSize)
+            # searchRes = manga_list.find().sort("hits", -1).skip(index).limit(pageSize)
+
+            searchRes = manga_list.find().sort("hits", -1).skip(index).limit(pageSize)
+
+            # searchRes = manga_list.find_one({}, sort=[{"hits", -1}]).skip(index).limit(pageSize)
             # .hint([{"hits", -1}])
         elif sortField == "create":
             searchRes = manga_list.find().sort([{"create", -1}]).skip(index).limit(pageSize)
@@ -77,10 +82,35 @@ def getMangaList(request):
     rets = []
     for item in searchRes:
         # item['_id'] = str(item['_id'])
+        item["chapters"] = []
         rets.append(item)
-        print(item)
+        # print(item)
     client.close()
-    return JsonResponse({"result": 0,"total":total, "mangalist": rets})
+    rets2 = []
+
+    # rets2.append(rets[0])
+    # rets2.append(rets[1])
+    # rets2.append(rets[2])
+    # rets2.append(rets[3])
+    # rets2.append(rets[4])
+    # rets2.append(rets[5])
+    # rets2.append(rets[6])
+    # rets2.append(rets[7])
+    # rets2.append(rets[8])
+
+    # for item in searchRes:
+    #     # item['_id'] = str(item['_id'])
+    #     rets.append(item)
+    #     # print(item)
+    client.close()
+    print("finish===============>1")
+    pre = time.time()
+    retJson = JsonResponse({"result": 0, "total": total, "mangalist": rets})
+    cur = time.time()
+    print("finish===============>2")
+    print(cur-pre)
+
+    return retJson
 
 @csrf_exempt
 def getMangaByMangaId(request):
