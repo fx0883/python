@@ -19,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/novelweb$tests.coverage" NAME="tests Coverage Results" MODIFIED="1533895687732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/novelapp" />
+    <SUITE FILE_PATH="coverage/novelweb$tests.coverage" NAME="tests Coverage Results" MODIFIED="1541037507510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/novelapp" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -86,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/novelapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="119">
+              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
               <folding>
                 <element signature="e#633#661#0" expanded="true" />
               </folding>
@@ -98,32 +98,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/novelweb/wsgi.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/novelapp/models.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="csrf.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/python/venv/Lib/site-packages/django/views/decorators/csrf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="950">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mangaview.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/novelapp/mangaview.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2527">
+              <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
               <folding>
-                <element signature="e#224#238#0" expanded="true" />
+                <element signature="e#25#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/novelweb/settings.py">
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/python/venv/Lib/site-packages/django/core/handlers/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2337">
-              <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+            <state relative-caret-position="2147">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mangaview.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/novelapp/mangaview.py">
+      <file leaf-file-name="wapview.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/novelapp/wapview.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="100" column="20" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="20" />
+            <state relative-caret-position="855">
+              <caret line="54" selection-start-line="54" selection-end-line="56" selection-end-column="77" />
+              <folding>
+                <element signature="e#25#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/novelapp/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="218" selection-start-line="218" selection-end-line="218" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5890">
+              <caret line="310" selection-start-line="310" selection-end-line="310" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputImage.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/novelapp/inputFile/inputImage.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -133,18 +183,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
               <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-              <folding>
-                <element signature="e#25#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wapview.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/novelapp/wapview.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="42" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="42" />
               <folding>
                 <element signature="e#25#61#0" expanded="true" />
               </folding>
@@ -176,7 +214,15 @@
       <find>CORS_ORIGIN_ALLOW_ALL</find>
       <find>abc</find>
       <find>127.0.0.1</find>
+      <find>-1</find>
+      <find>search</find>
+      <find>try</find>
+      <find>searchMangalList</find>
+      <find>and</find>
       <find>getRandomArray</find>
+      <find>chapter</find>
+      <find>len</find>
+      <find>one</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,19 +236,20 @@
         <option value="$PROJECT_DIR$/templates/web/js/global.js" />
         <option value="$PROJECT_DIR$/templates/js/ipindex140827.js" />
         <option value="$PROJECT_DIR$/static/123.htm" />
-        <option value="$PROJECT_DIR$/novelapp/tests.py" />
         <option value="$PROJECT_DIR$/novelweb/settings.py" />
         <option value="$PROJECT_DIR$/templates/chapterinfo.htm" />
         <option value="$PROJECT_DIR$/static/js/ipindex140827.js" />
-        <option value="$PROJECT_DIR$/novelapp/wapview.py" />
         <option value="$PROJECT_DIR$/templates/article.htm" />
         <option value="$PROJECT_DIR$/templates/list.htm" />
         <option value="$PROJECT_DIR$/templates/index.htm" />
         <option value="$PROJECT_DIR$/novelapp/mangeview.py" />
         <option value="$PROJECT_DIR$/novelapp/views.py" />
         <option value="$PROJECT_DIR$/novelweb/wsgi.py" />
-        <option value="$PROJECT_DIR$/novelapp/mangaview.py" />
+        <option value="$PROJECT_DIR$/novelapp/wapview.py" />
+        <option value="$PROJECT_DIR$/novelapp/inputFile/inputImage.json" />
+        <option value="$PROJECT_DIR$/novelapp/tests.py" />
         <option value="$PROJECT_DIR$/novelapp/urls.py" />
+        <option value="$PROJECT_DIR$/novelapp/mangaview.py" />
       </list>
     </option>
   </component>
@@ -215,11 +262,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="184" />
-    <option name="y" value="12" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="28" />
     <option name="width" value="1259" />
-    <option name="height" value="722" />
+    <option name="height" value="687" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -239,6 +285,12 @@
               <item name="novelweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="novelweb" type="462c0819:PsiDirectoryNode" />
               <item name="novelapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="novelweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="novelweb" type="462c0819:PsiDirectoryNode" />
+              <item name="novelapp" type="462c0819:PsiDirectoryNode" />
+              <item name="inputFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="novelweb" type="b2602c69:ProjectViewProjectNode" />
@@ -267,12 +319,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mangaedencrawl2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Dingdian" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\python\novelweb\novelapp\inputFile" />
       <recent name="$PROJECT_DIR$/novelapp" />
       <recent name="$PROJECT_DIR$/static/css" />
       <recent name="$PROJECT_DIR$/templates" />
@@ -370,9 +423,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests" />
         <item itemvalue="JavaScript Debug.list.htm" />
         <item itemvalue="JavaScript Debug.list1.htm" />
-        <item itemvalue="Python.tests" />
         <item itemvalue="JavaScript Debug.123.htm" />
         <item itemvalue="JavaScript Debug.article.htm" />
       </list>
@@ -392,26 +445,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
-    <editor active="true" />
+    <frame x="28" y="0" width="1259" height="687" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32874617" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3283859" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4245283" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3294893" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2936893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18348624" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3047776" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21886793" />
       <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32566372" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -419,7 +471,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" visible="true" weight="0.32743362" />
+      <window_info anchor="right" id="Data View" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,11 +525,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/novelapp/tests.py</url>
-          <line>183</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/novelapp/tests.py</url>
           <line>189</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
@@ -488,18 +535,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/novelapp/mangaview.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/novelapp/mangaview.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="47" />
+          <line>222</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/novelapp/mangaview.py</url>
           <line>63</line>
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/novelapp/mangaview.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/novelapp/mangaview.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://C:/python/venv/Lib/site-packages/pymongo/helpers.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/novelapp/mangaview.py</url>
+          <line>278</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/novelapp/tests.py</url>
+          <line>226</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/novelapp/tests.py</url>
+          <line>227</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/novelapp/tests.py</url>
+          <line>206</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -509,6 +586,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -519,22 +597,41 @@
         <watch expression="itemCategory['category']" language="Python" />
       </configuration>
       <configuration name="Python.DjangoServer">
-        <watch expression="type(request)" language="Python" />
-        <watch expression="retAllNovelCategory.count()" language="Python" />
-        <watch expression="retAllNovelCategory.count(retAllNovelCategory)" language="Python" />
-        <watch expression="len(retAllNovelCategory)" language="Python" />
-        <watch expression="http://127.0.0.1:8000/api/wap/getChapterInfo/bookid/a039992e-9c71-11e8-ab07-6003088a50b6/chapterid/a171df5e-9c71-11e8-8d6a-6003088a50b6" language="Python" />
-        <watch expression="retRes[&quot;content&quot;]" language="Python" />
-        <watch expression="json_str" language="Python" />
-        <watch expression="json_str.encode(&quot;UTF-8&quot;)" language="Python" />
-        <watch expression="rets" language="Python" />
-        <watch expression="item[&quot;_id&quot;].toString()" language="Python" />
-        <watch expression="str(item['_id'])" language="Python" />
+        <watch expression="request" />
+        <watch expression="request.raw_post_data" language="Python" />
+        <watch expression="received_json_data[&quot;categoryName&quot;]" language="Python" />
+        <watch expression="received_json_data.has_key(&quot;categoryNames&quot;)" language="Python" />
+        <watch expression="&quot;categoryNames&quot; in received_json_data.keys()" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>&quot;categoryNames&quot; in received_json_data.keys()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>received_json_data.keys()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>received_json_data.has_key(&quot;categoryNames&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>received_json_data[&quot;categoryName&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.raw_post_data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>str(item['_id'])</expression-string>
         <language-id>Python</language-id>
@@ -555,63 +652,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>json_str.encode(&quot;UTF-8&quot;)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>json_str</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>retRes[&quot;content&quot;]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>http://127.0.0.1:8000/api/wap/getChapterInfo/bookid/a039992e-9c71-11e8-ab07-6003088a50b6/chapterid/a171df5e-9c71-11e8-8d6a-6003088a50b6</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/web/js/Master.js" />
-    <entry file="file://$PROJECT_DIR$/templates/web/js/RNUI.js" />
-    <entry file="file://$PROJECT_DIR$/templates/web/wb_index.php.html" />
-    <entry file="file://$PROJECT_DIR$/templates/web/js/xui-2.js" />
-    <entry file="file://$PROJECT_DIR$/novelapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/novelapp/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/images/20160517072050.jpg" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/shortcuts.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/nose/ext/dtcompat.py" />
-    <entry file="file://$PROJECT_DIR$/novelapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="185" column="79" selection-start-line="185" selection-start-column="79" selection-end-line="185" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js/jquery-1.2.1.pack.js" />
-    <entry file="file://$PROJECT_DIR$/static/css/rank_class_collect_down.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/read.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/20160517072050.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -738,20 +781,92 @@
     <entry file="file://$PROJECT_DIR$/templates/¿¡»À‘¥¬Î¬€Ã≥√‚∑—…Ã“µ‘¥¬Îœ¬‘ÿ  ÷ª˙html5Œ¢–≈Œ¢≥°æ∞Õ¯’æ‘¥¬Îœ¬‘ÿ.url">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/novelweb/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="e#224#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/novelapp/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/novelweb/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2337">
           <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/pymongo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="10" selection-start-line="18" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelweb/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/django/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/pymongo/collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26771">
+          <caret line="1444" selection-start-line="1444" selection-end-line="1444" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/pymongo/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/pymongo/cursor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12179">
+          <caret line="667" column="37" selection-start-line="667" selection-start-column="37" selection-end-line="667" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/venv/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2147">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelapp/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelapp/wapview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="54" selection-start-line="54" selection-end-line="56" selection-end-column="77" />
+          <folding>
+            <element signature="e#25#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -765,29 +880,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/novelapp/wapview.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35-32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="42" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="42" />
+        <state relative-caret-position="5890">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelapp/inputFile/inputImage.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="218" selection-start-line="218" selection-end-line="218" selection-end-column="69" />
           <folding>
-            <element signature="e#25#61#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+          <folding>
+            <element signature="e#633#661#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/novelapp/mangaview.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="100" column="20" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/novelapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="-2527">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
           <folding>
-            <element signature="e#633#661#0" expanded="true" />
+            <element signature="e#25#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
