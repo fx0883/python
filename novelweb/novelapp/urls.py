@@ -53,4 +53,8 @@ urlpatterns = [
          mangaview.reportBad, name='reportBad'),
     path("manga/getReportBad",
          mangaview.getReportBad, name='getReportBad'),
+    path("manga/getCategoryRecommend",
+         mangaview.getCategoryRecommend, name='getCategoryRecommend'),
+    path("manga/getTopMangaList",
+         mangaview.getTopMangaList, name='getTopMangaList'),
 ]

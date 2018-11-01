@@ -9,7 +9,7 @@ import simplejson
 from pymongo import DESCENDING
 from django.views.decorators.cache import cache_page
 # import bson.objectid
-
+import numpy as np
 
 
 
@@ -76,7 +76,7 @@ def getMangaList(request):
     total = searchRes.count()
     rets = []
     for item in searchRes:
-        # item['_id'] = str(item['_id'])
+        item["chapters"] = []
         rets.append(item)
         print(item)
     client.close()
@@ -288,3 +288,83 @@ def getReportBad(request):
         client.close()
         return JsonResponse({"result": -1})
     return JsonResponse({"result": -1})
+
+
+@csrf_exempt
+def getCategoryRecommend(request):
+    client = MongoClient(MangadbConfig["url"])
+    # 连接数据库
+    db = client.mangaeden
+    # 获取booklist集合
+    categoryList = db["mangacategory"]
+
+    retCategory = categoryList.find()
+    total = retCategory.count()
+    retAllNovelCategory = []
+    for itemCategory in retCategory:
+        categoryName = itemCategory['category']
+        retAllNovelCategory.append(categoryName)
+
+    randomArray = getRandomArray(len(retAllNovelCategory))
+
+    manga_list = db["mangalist"]
+
+    retAllNovelCategoryRandom = []
+    for itemindex in randomArray:
+        retAllNovelCategoryRandom.append(retAllNovelCategory[int(itemindex)])
+    retCount = 3
+    searchdic = {"$or": []}
+    for categoryName in retAllNovelCategoryRandom:
+        searchdic["$or"].append({"categoriesstr": {'$regex': ".*" + categoryName + ".*"}})
+        retCount = retCount - 1
+        if retCount == 0:
+            break
+
+    searchRes = manga_list.find(searchdic).sort([{"hits", -1}]).skip(0).limit(30)
+    total = searchRes.count()
+    rets = []
+    for item in searchRes:
+        item["chapters"] = []
+        rets.append(item)
+        print(item)
+    client.close()
+    return JsonResponse({"result": 0,"total":total, "mangalist": rets})
+
+
+@csrf_exempt
+@cache_page(60 * 15)  # 秒数，这里指缓存 15 分钟，不直接写900是为了提高可读性
+def getTopMangaList(request):
+
+    pageIndex = 0
+    pageSize = 6
+    sortField = None
+    categoryNames = None
+    client = MongoClient(MangadbConfig["url"])
+    # 连接数据库
+    db = client.mangaeden
+    manga_list = db["mangalist"]
+    mangaImagelist = db["manga_image"]
+    imageDic = mangaImagelist.find_one({"_id": "mangaImagelist_id"})
+
+    imageListCount = len(imageDic["topImageUrl"])
+    pageIndex = 0
+    index = int(pageIndex) * pageSize
+    searchRes = None
+
+    searchRes = manga_list.find().skip(index).limit(pageSize)
+    rets = []
+    imageIndex = 0
+    for item in searchRes:
+        item["chapters"] = []
+        if(imageIndex>=imageListCount):
+            imageIndex = 0
+        item["imageUrl"] = imageDic["imageUrl"][imageIndex]
+        rets.append(item)
+        imageIndex = imageIndex + 1
+        print(item)
+    client.close()
+    return JsonResponse({"result": 0,"mangalist": rets})
+
+def getRandomArray(endindex):
+    arr = np.random.permutation(int(endindex))
+    return arr

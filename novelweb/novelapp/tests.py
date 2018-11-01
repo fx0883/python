@@ -4,7 +4,7 @@ from django.test import TestCase
 from pymongo import MongoClient
 import hashlib
 import json
-
+import numpy as np
 # client = MongoClient("mongodb://127.0.0.1:27017")
 # # 连接数据库
 # db = client.dingdian
@@ -186,7 +186,56 @@ def getChapterInfo(bookid,chapterid):
     retRes["content"] = retRes["content"].replace("\r\n", "<br/>").replace("\0x", "&nbsp");
 
     print(retRes)
+#
+#     client.close()
+#
+# getChapterInfo("6572e96e-9c71-11e8-9b63-6003088a50b6","668cc248-9c71-11e8-b1bf-6003088a50b6")
 
+def getRandomArray(endindex):
+    arr = np.random.permutation(int(endindex))
+    return arr
+
+# print(getRandomArray(10))
+
+
+def insertMangaPic():
+    client = MongoClient("mongodb://127.0.0.1:27017")
+    # 连接数据库
+    db = client.mangaeden
+    mangaImagelist = db["manga_image"]
+    load_dict = None
+    with open("./inputFile/inputImage.json", 'r') as load_f:
+        load_dict = json.load(load_f)
+        # print(load_dict)
+    load_dict["_id"] = "mangaImagelist_id"
+    mangaImagelist.insert(load_dict)
     client.close()
 
-getChapterInfo("6572e96e-9c71-11e8-9b63-6003088a50b6","668cc248-9c71-11e8-b1bf-6003088a50b6")
+def getMangaPic():
+    client = MongoClient("mongodb://127.0.0.1:27017")
+    # 连接数据库
+    db = client.mangaeden
+    mangaImagelist = db["manga_image"]
+    searchRes = mangaImagelist.find_one({"_id": "mangaImagelist_id"})
+    # total = searchRes.count()
+    # pageIndex = 0
+    # rets = []
+    # for item in searchRes:
+    #     rets.append(item)
+    print(searchRes)
+
+# insertMangaPic()
+getMangaPic()
+
+
+# def getChapterInfo(bookid,chapterid):
+#     client = MongoClient("mongodb://127.0.0.1:27017")
+#     # 连接数据库
+#     db = client.dingdian
+#     chapterlist = db[bookid]
+#
+#     retRes = chapterlist.find_one({"_id": chapterid})
+#
+#     retRes["content"] = retRes["content"].replace("\r\n", "<br/>").replace("\0x", "&nbsp");
+#
+#     print(retRes)
