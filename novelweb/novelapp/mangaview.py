@@ -47,9 +47,9 @@ def getMangaList(request):
     index = int(pageIndex) * pageSize
     searchRes = None
     if categoryNames != None:
-        searchdic = {"$or":[]}
+        searchdic = {"$and":[]}
         for categoryName in categoryNames:
-            searchdic["$or"].append({"categoriesstr": {'$regex': ".*" + categoryName + ".*"}})
+            searchdic["$and"].append({"categoriesstr": {'$regex': ".*" + categoryName + ".*"}})
         if sortField == None:
             searchRes = manga_list.find(searchdic).skip(index).limit(pageSize)
         elif sortField == "hits":
@@ -376,7 +376,7 @@ def getTopMangaList(request):
     mangaImagelist = db["manga_image"]
     imageDic = mangaImagelist.find_one({"_id": "mangaImagelist_id"})
 
-    imageListCount = len(imageDic["topImageUrl"])
+    imageListCount = len(imageDic["imageUrl"])
     pageIndex = 0
     index = int(pageIndex) * pageSize
     searchRes = None
@@ -388,7 +388,7 @@ def getTopMangaList(request):
         item["chapters"] = []
         if(imageIndex>=imageListCount):
             imageIndex = 0
-        item["imageUrl"] = imageDic["imageUrl"][imageIndex]
+        item["topImageUrl"] = imageDic["imageUrl"][imageIndex]
         rets.append(item)
         imageIndex = imageIndex + 1
         print(item)
