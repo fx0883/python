@@ -11,3 +11,4 @@ novelweb/venv
 *.xml
 *.xml
 *.xml
+tool/venv
