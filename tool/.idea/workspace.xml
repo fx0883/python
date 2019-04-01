@@ -2,10 +2,336 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="506742f2-3838-4641-987a-42b9fa8b4509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rename/db/babyDietFood.DB" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rename/rename.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tool.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/db/babydietfood2.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/rename2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/三色肝末.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/三色花心卷.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/三色鱼丸.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/三鲜清炖鸡块.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/三鲜蛋羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/东坡肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/丝瓜虾仁糙米粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/丝瓜虾皮.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/丝瓜香菇汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/乱炖.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/五彩冬瓜盅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/五彩鸡丝羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/京味打卤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/什蔬饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/什锦沙拉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/什锦炒饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/什锦猪肉菜末.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/什锦珍菇盖饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/免责条款.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/八宝粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/其他.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/冬瓜海米汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/冬瓜肉末面条.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/冬瓜荷叶汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/冬笋炝黄豆芽.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/冰糖炖木瓜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/凉拌藕片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/南瓜吐司.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/南瓜奶酪.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/南瓜红薯玉米粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/南瓜豆浆浓汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/南瓜鸡肉饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/卤猪肝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/双蛋黄豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/圆笼粉蒸牛肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/土豆泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/土豆浓汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/土豆烧牛肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/土豆烧鸡腿.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/地三鲜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶汤煮大白菜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶汤芹蔬小排骨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶油蘑菇沙拉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶油通心粉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶酪鸡蛋三明治.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶香什锦豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶香土豆肉泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/奶香玉米饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/嫩肉丸子.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/嫩菱炒鸡丁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/家常烙饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/小兔猪肝饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/小米山药粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/小米粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/山药木耳胡萝卜汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/山药薏米粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/川贝梨汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/干烧茄子.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/干贝冬瓜泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/年龄_0_3月.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/扁豆焖面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/拌黄瓜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/拔丝香蕉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/择校.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/排骨芋头汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/排骨香菇汤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/日式炖蛋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/时蔬杂炒.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/木瓜炖银耳.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/木须肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/杂菌鸡汤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/杏仁番茄拌西兰花.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/松仁玉米烙.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/松仁豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/板栗烧鸡.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/板栗蒸糕.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/果仁核桃粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/果仁通粉面包.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/柿子丸.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/栗子粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/核桃鸡丁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/桂圆蒸蛋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/梨水燕麦片粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/梨酱.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/椒丝苦瓜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/水果拌酸奶.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/水果沙拉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/水果牛肉粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/水果羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/沙丁鱼粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/油焖腐竹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/洋葱肉丝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/洋葱虾仁炒蛋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/海带排骨汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/海米芹菜叶豆渣羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/海米蜇丝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/海鲜橄榄茄汁意大利面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/淮山鸭子汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/清炒南瓜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/清蒸凤尾菇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/清蒸大虾.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/清蒸草鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/清蒸鳕鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/溜猪肝片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/溜鱼片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/滑蛋炒饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/火腿麦糊烧.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/炒三丁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/炖苹果红薯.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/炸虾饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/炸黄鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/烤肉蛋饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/煎三文鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/煎荠菜豆腐圆饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/牛奶红薯泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/牛奶芹蔬排骨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/牛奶蛋黄米汤粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/牛奶西米露.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/牛肉炒河粉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/牛肉饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/猪肉胡萝卜饺子.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/猪肉豆腐虾汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/猪肝炒黄瓜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/猪肝菠菜面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/猪骨胡萝卜泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/玉米土豆泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/玉米牛肉羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/玉米面粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/玉米面糊饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/琥珀桃仁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/瓜丁花生米.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/甜橙果冻.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/生梨肉片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄土豆鸡末粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄牛肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄猪肝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄蛋花汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄鸡蛋什锦面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番茄鸡蛋菜汤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/番薯肝扒.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/疙瘩汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/瘦肉泥粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/白果桂花羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/白萝卜生梨汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/碎菜牛肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/章鱼排骨汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/竹笋香菇豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/竹荪鸽蛋汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/米汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/米粉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/米粉蒸肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/粟米鱼块.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/糖醋小排.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/紫菜包饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/红嘴绿鹦哥丝面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/红枣泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/红烧带鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/红烧牛肉面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/红烧香芋块.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/红烧鲻鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/红薯粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/绉纱鸽蛋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/绿豆糕.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/绿豆芽炒韭菜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/翡翠芸豆汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/翡翠豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肉丸甜菜汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肉末卷心菜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肉末番茄烧豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肉末粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肉末茄泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肉燥盖浇饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肉糜蒸蛋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/肝肉泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/胡萝卜山楂汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/胡萝卜排骨汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/胡萝卜沙拉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/胡萝卜泥青菜肉末菜粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/胡萝卜牛肉饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/胡萝卜玉米渣粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/胡萝卜苹果葡萄布丁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/芙蓉烩鸡茸.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/芝麻粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/芝麻酱拌凉皮.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/芦笋黑椒小牛扒.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/花生牛肉汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/芹末鲳鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/芹菜炒猪肝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苋菜银鱼粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苦瓜绿豆汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苹果布丁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苹果沙拉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苹果胡萝卜汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苹果胡萝卜泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苹果酪.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/苹果香蕉组合.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/茄丁面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/茄汁虾仁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/草鱼焖豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/荷包蛋饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/荸荠烧茄瓜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/荸荠草莓饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/莲子炖肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/莲子百合银耳羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/莲藕排骨汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菊珍鱼圆.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菜花粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠菜丸子汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠菜土豆肉末粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠菜汤米粉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠菜肉丝汤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠菜蛋黄粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠菜银鱼面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠菜鸭血汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/菠萝炒牛肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/萝卜仔排煲.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/萝卜鱼泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/葡萄干布丁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/葱油拌木耳.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蒸南瓜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蒸苹果.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蒸豌豆糯米饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蒸鱼泥豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蔬菜浓汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蔬菜炒面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蔬菜鱼肉粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/薏米百合粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蘑菇炖豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾仁油菜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾仁炒豌豆.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾仁菜汤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾仁豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾仁豆腐豌豆泥粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾仁鸡蛋菠菜刀切面汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾皮碎菜包.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾皮碎菜粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾皮紫菜蛋汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾肉肝菜什锦软面条.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/虾蓉小馄饨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蛋炒菜花.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蛋黄泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蛋黄豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蛤蜊南瓜面片汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蛤蜊牛奶浓汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/蜜桃鲜贝卷.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/西瓜汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/西红柿打卤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/西红柿海带汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/西红柿牛肉汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/西红柿苹果汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/西芹鸡肫.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/西葫芦鸡蛋饼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豆腐油菜心.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豆腐粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豆腐脑.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豆腐虾皮蒸蛋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豆腐蛋黄粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豆腐鲫鱼汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豆芽炒豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/豌豆肉丝粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/贝母粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/酱淋茄子.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/酱牛肉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/酸奶黄瓜沙拉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/醋溜尖椒土豆丝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/雪梨银耳汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/雪菜黄鱼汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/青椒土豆丝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/青菜汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/青菜泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/青豆土豆泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/韭菜虾仁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/飘香猪脆骨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香干肉丝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香椿芽炒蛋.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香橙什果球.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香煎鸡丝面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香菇山药.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香菇烧菜花.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香菇豆腐炖泥鳅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香菇鸡粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香菇鸡茸蔬菜粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香蕉奶汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香蕉粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香酥腰果.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/香香骨汤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/骨汤面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼头冻豆腐.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼头豆腐汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼泥胡萝卜泥米粉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼泥豆腐羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼泥豆腐苋菜粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼泥青菜番茄粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼肉土豆羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼肉松粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼肉水饺.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼菜米糊.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鱼香茄子煲.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲑鱼炖饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲜味杂粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲜橙汁.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲜玉米糊.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲜蘑炒肉片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲜虾丝瓜汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲤鱼苦瓜汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲫鱼瘦肉汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鲫鱼豆腐汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鳕鱼豆腐粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鳕鱼酸奶汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡丝凉面.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡丝馄饨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡汁土豆泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡汤南瓜泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡粒椰汁烩南瓜蓉.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡肉番茄羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡肉白菜饺.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡肉西兰花盖浇饭.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡肝蔬菜泥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡蛋玉米羹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸡蛋粥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鸭丝绿豆芽.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/鹌鹑炖枸杞.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/黄瓜蜜条.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/黄金玉米粒.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/repice3/黑木耳淮山瘦肉汤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rename/retmp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +343,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tool$convertImage.coverage" NAME="convertImage Coverage Results" MODIFIED="1539999655327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convertImage" />
     <SUITE FILE_PATH="coverage/tool$rename.coverage" NAME="rename Coverage Results" MODIFIED="1547891466559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rename" />
+    <SUITE FILE_PATH="coverage/tool$retmp.coverage" NAME="retmp Coverage Results" MODIFIED="1550546265789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rename" />
+    <SUITE FILE_PATH="coverage/tool$rename2.coverage" NAME="rename2 Coverage Results" MODIFIED="1550546275078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rename" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -32,14 +360,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rename/rename.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="9" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rename/rename2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rename/retmp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -63,14 +412,15 @@
         <option value="$PROJECT_DIR$/convertImage/convertImage.py" />
         <option value="$PROJECT_DIR$/rename/repice2/rename.sh" />
         <option value="$PROJECT_DIR$/rename/rename.py" />
+        <option value="$PROJECT_DIR$/rename/retmp.py" />
+        <option value="$PROJECT_DIR$/rename/rename2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="484" />
-    <option name="y" value="338" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="831" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -95,6 +445,18 @@
               <item name="tool" type="462c0819:PsiDirectoryNode" />
               <item name="rename" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+              <item name="rename" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+              <item name="rename" type="462c0819:PsiDirectoryNode" />
+              <item name="repice5" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -110,11 +472,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rename" />
+      <recent name="$PROJECT_DIR$/rename/db" />
       <recent name="$PROJECT_DIR$/convertImage" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rename/db" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rename" />
       <recent name="$PROJECT_DIR$/convertImage" />
     </key>
   </component>
@@ -130,7 +494,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rename">
+  <component name="RunManager" selected="Python.rename2">
     <configuration name="convertImage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tool" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,8 +539,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rename2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rename" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rename/rename2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="retmp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rename" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rename/retmp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.rename2" />
+        <item itemvalue="Python.retmp" />
         <item itemvalue="Python.rename" />
         <item itemvalue="Python.convertImage" />
       </list>
@@ -194,31 +604,32 @@
       <updated>1539846349347</updated>
       <workItem from="1547864239857" duration="155000" />
       <workItem from="1547865436935" duration="2837000" />
+      <workItem from="1550542638031" duration="3553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2992000" />
+    <option name="totallyTimeSpent" value="6545000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="484" y="338" width="1440" height="831" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="834" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26466382" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26824033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642345" weight="0.32882273" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4985694" weight="0.3991881" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914163" weight="0.32614556" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7753934" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928468" weight="0.32884097" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035765" side_tool="true" visible="true" weight="0.32882273" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.22460657" side_tool="true" visible="true" weight="0.39892185" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.32884097" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49928468" weight="0.32884097" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49919224" visible="true" weight="0.33114755" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -240,8 +651,49 @@
           <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rename/rename2.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rename/rename.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rename/rename.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="repice[0]" language="Python" />
+        <watch expression="repice['name']" language="Python" />
+        <watch expression="repice" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>repice</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>repice['name']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>repice[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/convertImage/retIonic/72.png" />
@@ -259,6 +711,7 @@
     <entry file="file://$PROJECT_DIR$/convertImage/retIonic/512.png" />
     <entry file="file://$PROJECT_DIR$/convertImage/retIonic/1024.png" />
     <entry file="file://$PROJECT_DIR$/convertImage/retIonic/192.png" />
+    <entry file="file://$PROJECT_DIR$/rename/repice2/rename.sh" />
     <entry file="file://$PROJECT_DIR$/convertImage/convertImage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -269,17 +722,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rename/repice2/rename.sh">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state relative-caret-position="316">
+          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rename/retmp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rename/rename.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rename/rename2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
